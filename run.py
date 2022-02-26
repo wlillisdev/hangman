@@ -8,6 +8,7 @@ def get_word():
     that the player will have to guess.
     """
     word = random.choice(word_list)
+    # Return word in uppercas
     return word.upper()
 
 
