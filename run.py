@@ -12,14 +12,9 @@ def get_word():
     return word.upper()
 
 
-
-"""
-Imports list of random words.
-"""
-
-print("Hello World")
-r = RandomWords()
-
-print(r.get_random_word())
-
+def play_hangman(word):
+    """
+    Play a game of hangman.
+    Displays  lives and layout for player to play game.
+    """
 
