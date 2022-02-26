@@ -1,3 +1,7 @@
+"""
+List of words.
+"""
+
 word_list = [
     "abruptly",
     "absurd",

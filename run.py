@@ -12,3 +12,14 @@ def get_word():
     return word.upper()
 
 
+
+"""
+Imports list of random words.
+"""
+
+print("Hello World")
+r = RandomWords()
+
+print(r.get_random_word())
+
+
