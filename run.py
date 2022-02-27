@@ -1,10 +1,11 @@
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
 # import randon python standard library
 import random
 # import words
 from words import words
 # import libary of ascii_letters
 import string
+# import handman tries pictuers
+from hangman_visual import lives_visual_dict
 
 
 def get_word():
@@ -14,13 +15,12 @@ def get_word():
     """
     # Select a randon word from the list
     word = random.choice(words)
-    # Return word in uppercase 
-    return word.upper() 
-    
+    # Return word in uppercase
+    return word.upper()
 
-    
 
-def play_hangman():
+# function for game
+def hangman():
     """
     Play a game of hangman.
     Displays  lives and layout for player to play game.
@@ -32,52 +32,72 @@ def play_hangman():
     # list of character in alphabet uppercase  
     alphabet = set(string.ascii_uppercase)
     # letters that the user has guessed 
-    used_letters = set()
+    used_letters = set()  
     # number of tries the user has before game is over
     lives = 7
 
-    # creat a loop to iterate through input until all the letters guessed  
+    # creat a loop to iterate through input until all the letters guessed
     while len(word_letters) > 0 and lives > 0:
         
-        # letters that user has already used
-        # ' '.join(['a', 'b', 'c']) --> 'a b c' string seperated by a space
-        print('You have', lives, 'lives left and you have used these letters: ', ' '.join(used_letters))
+        print('You have', lives, 'lives left')
+        # letters that have been used
+        print('You have used these letters: ', ' '.join(used_letters))
 
-        # Tell the user what the current word with dashes (ie S - - P)
-        word_list = [letter if letter in used_letters else '-' for letter in word]
+        # Tells the user what the current word with dashes (ie S - - P)
+        word_list = [
+            letter if letter in used_letters else '_' for letter in word]
         print(lives_visual_dict[lives])
-        print('Current word: ', ' '.join(word_list))     
-        
-        
+        print('Current word: ', ' '.join(word_list))
+
         # Ask the users for a letter guess
-        user_letter = input('Please Guess a letter: ').upper()
+        user_letter = input('Guess a letter:\n').upper()
+        # If valid letter in alphabet add to user letter set
         if user_letter in alphabet - used_letters:
-            # If valid letter in alphabet add to user letter set
             used_letters.add(user_letter)
             # If guess is in the word it will remove from word_letters
             if user_letter in word_letters:
                 word_letters.remove(user_letter)
-                print('')
 
             else:
-                lives = lives - 1  # takes away a life if wrong
-                print('\nYour letter,', user_letter, 'is not in the word.')
-
-            # If user guessed character that has already been gueseed give feedback
+                # takes away a life if wrong
+                lives = lives - 1  
+                print('Letter is not in word.')
+        # If user guessed character that has already been guessed give feedback
         elif user_letter in used_letters:
-            print('\nYou have already picked that letter. Please Guess a new letter.')
-            # If user guessed a character that is not a letter give user feedback
+            print('You have already used that character. Please try again.')
+        # If user guessed a character that is not a letter give user feedback
         else:
-            print('\nThat is not a valid letter, please pick a letter.')
+            print('Invalid character. Please try again.')
 
-        # gets here when len(word_letters) == 0 OR when lives == 0
+    # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(lives_visual_dict[lives])
         print('You died, sorry. The word was', word)
+        restart_game()
     else:
-        print('YAY! You guessed the word', word, '!!')
+        print('You have guessed the word', word, '\nCongratulations!!')
+        restart_game()
 
-     
 
-    
-    
+def restart_game():
+    """ Gives player option to restart, otherwise returns to title screen """
+    game_restart = False
+
+    while not game_restart:
+        restart = input('Would you like to play Hangman? (Y/N)\n').upper()
+
+        if restart == "Y":
+            game_restart = True
+            hangman()
+
+        elif restart == "N":
+            game_restart = True
+            print('Goodbye!')
+            start_game()
+
+        else:
+            print('You must select Y or N. Please try again.')
+
+
+if __name__ == "__main__":
+    start_game()
