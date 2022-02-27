@@ -38,7 +38,6 @@ def play_hangman():
 
     # creat a loop to iterate through input until all the letters guessed  
     while len(word_letters) > 0 and lives > 0:
-        
         # Ask the users for a letter guess
         user_letter = input('Please Guess a letter: ').upper()
         if user_letter in alphabet - used_letters:
