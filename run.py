@@ -72,32 +72,33 @@ def hangman():
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(lives_visual_dict[lives])
-        print('You died, sorry. The word was', word)
-        restart_game()
+        print('Game Over you died. The word was', word)
+        # restart_game()
     else:
-        print('You have guessed the word', word, '\nCongratulations!!')
-        restart_game()
+        print('You are smart you guessed the word', word, '\nCongratulations!!')
+        # restart_game()
 
 
-def restart_game():
-    """ Gives player option to restart, otherwise returns to title screen """
-    game_restart = False
+# def restart_game():
+#     """ Gives player option to restart, otherwise returns to title screen """
+#     game_restart = False
 
-    while not game_restart:
-        restart = input('Would you like to play Hangman? (Y/N)\n').upper()
+#     while not game_restart:
+#         restart = input('Would you like to play Hangman? (Y/N)\n').upper()
 
-        if restart == "Y":
-            game_restart = True
-            hangman()
+#         if restart == "Y":
+#             game_restart = True
+#             hangman()
 
-        elif restart == "N":
-            game_restart = True
-            print('Goodbye!')
-            start_game()
+#         elif restart == "N":
+#             game_restart = True
+#             print('Goodbye!')
+#             start_game()
 
-        else:
-            print('You must select Y or N. Please try again.')
+#         else:
+#             print('You must select Y or N. Please try again.')
 
 
-if __name__ == "__main__":
-    start_game()
+# if __name__ == "__main__":
+#     start_game()
+hangman()d
