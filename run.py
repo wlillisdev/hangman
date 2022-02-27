@@ -6,7 +6,10 @@ from words import words
 import string
 # import handman tries pictuers
 from hangman_visual import lives_visual_dict
-
+# import colorama for adding colour
+import colorama
+from colorama import Fore
+colorama.init(autoreset=True)
 
 def get_word():
     """
