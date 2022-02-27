@@ -29,6 +29,7 @@ def play_hangman():
     word_letters = set(word)  # letters that are in word
     alphabet = set(string.ascii_uppercase) # list of character in alphabet uppercase
     used_letters = set()  # letters that the user has guessed
-
     lives = 7   # number of tries the user has before game over
+
+    
     
