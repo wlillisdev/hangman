@@ -38,6 +38,13 @@ def play_hangman():
 
     # creat a loop to iterate through input until all the letters guessed  
     while len(word_letters) > 0 and lives > 0:
+        
+        # letters that user has already used
+        # ' '.join(['a', 'b', 'c']) --> 'a b c' string seperated by a space
+        print('You have', lives, 'lives left and you have used these letters: ', ' '.join(used_letters))
+        
+        
+        
         # Ask the users for a letter guess
         user_letter = input('Please Guess a letter: ').upper()
         if user_letter in alphabet - used_letters:
