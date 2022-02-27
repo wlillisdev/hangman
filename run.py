@@ -42,6 +42,11 @@ def play_hangman():
         # letters that user has already used
         # ' '.join(['a', 'b', 'c']) --> 'a b c' string seperated by a space
         print('You have', lives, 'lives left and you have used these letters: ', ' '.join(used_letters))
+
+        # Tell the user what the current word with dashes (ie S - - P)
+        word_list = [letter if letter in used_letters else '-' for letter in word]
+        print(lives_visual_dict[lives])
+        print('Current word: ', ' '.join(word_list))
         
         
         
