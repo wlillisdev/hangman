@@ -24,6 +24,7 @@ def hangman():
     """
     Play a game of hangman.
     Displays  lives and layout for player to play game.
+    And guess the random word
     """
     # get random word from get_word
     word = get_word()
@@ -61,21 +62,21 @@ def hangman():
             else:
                 # takes away a life if wrong
                 lives = lives - 1  
-                print('Letter is not in word.')
+                print('Letter is not in the word.')
         # If user guessed character that has already been guessed give feedback
         elif user_letter in used_letters:
-            print('You have already used that character. Please try again.')
+            print('You have already used that letter. Please try again.')
         # If user guessed a character that is not a letter give user feedback
         else:
-            print('Invalid character. Please try again.')
+            print('Invalid character. Please try again with a letter.')
 
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(lives_visual_dict[lives])
-        print('Game Over you died. The word was', word)
+        print('Game Over you died:( The word was', word)
         # restart_game()
     else:
-        print('You are smart you guessed the word', word, '\nCongratulations!!')
+        print('You are clever you guessed the word', word, '\nWell Done!!')
         # restart_game()
 
 
@@ -101,4 +102,4 @@ def hangman():
 
 # if __name__ == "__main__":
 #     start_game()
-hangman()d
+hangman()
