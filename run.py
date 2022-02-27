@@ -35,23 +35,28 @@ def play_hangman():
     used_letters = set()
     # number of tries the user has before game is over
     lives = 7
-    
-    # Ask the users for a letter guess
-    user_letter = input('Please Guess a letter: ').upper()
-    if user_letter in alphabet - used_letters:
-        # If valid letter in alphabet add to user letter set
-        used_letters.add(user_letter)
-        # If guess is in the word it will remove from word_letters
-        if user_letter in word_letters:
-            word_letters.remove(user_letter)
-            print('')
 
-        # If user guessed character has already been gueseed raise error
-    elif user_letter in used_letters:
-       print('\nYou have already used that letter. Please Guess another letter.')
-    
-    else:
-        print('\nThat is not a valid letter, please pick a letter.')
+    # creat a loop to iterate through input until all the letters guessed  
+    while len(word_letters) > 0 and lives > 0:
+        
+        # Ask the users for a letter guess
+        user_letter = input('Please Guess a letter: ').upper()
+        if user_letter in alphabet - used_letters:
+            # If valid letter in alphabet add to user letter set
+            used_letters.add(user_letter)
+            # If guess is in the word it will remove from word_letters
+            if user_letter in word_letters:
+                word_letters.remove(user_letter)
+                print('')
+
+            # If user guessed character that has already been gueseed give feedback
+        elif user_letter in used_letters:
+        print('\nYou have already picked that letter. Please Guess a new letter.')
+            # If user guessed a character that is not a letter give user feedback
+        else:
+            print('\nThat is not a valid letter, please pick a letter.')
+
+    # gets here when len(word_letters) == 0 OR when lives == 0
 
      
 
