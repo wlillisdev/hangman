@@ -46,8 +46,7 @@ def play_hangman():
         # Tell the user what the current word with dashes (ie S - - P)
         word_list = [letter if letter in used_letters else '-' for letter in word]
         print(lives_visual_dict[lives])
-        print('Current word: ', ' '.join(word_list))
-        
+        print('Current word: ', ' '.join(word_list))     
         
         
         # Ask the users for a letter guess
@@ -60,6 +59,10 @@ def play_hangman():
                 word_letters.remove(user_letter)
                 print('')
 
+            else:
+                lives = lives - 1  # takes away a life if wrong
+                print('\nYour letter,', user_letter, 'is not in the word.')
+
             # If user guessed character that has already been gueseed give feedback
         elif user_letter in used_letters:
             print('\nYou have already picked that letter. Please Guess a new letter.')
@@ -67,7 +70,12 @@ def play_hangman():
         else:
             print('\nThat is not a valid letter, please pick a letter.')
 
-    # gets here when len(word_letters) == 0 OR when lives == 0
+        # gets here when len(word_letters) == 0 OR when lives == 0
+    if lives == 0:
+        print(lives_visual_dict[lives])
+        print('You died, sorry. The word was', word)
+    else:
+        print('YAY! You guessed the word', word, '!!')
 
      
 
