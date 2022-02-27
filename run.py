@@ -34,7 +34,17 @@ def play_hangman():
     # letters that the user has guessed 
     used_letters = set()
     # number of tries the user has before game is over
-    lives = 7   
+    lives = 7
+    
+    # Getting the users letter guess
+    user_letter = input('Guess a letter: ').upper()
+    if user_letter in alphabet - used_letters:
+        used_letters.add(user_letter)
+        if user_letter in word_letters:
+            word_letters.remove(user_letter)
+                print('')
+
+     
 
     
     
