@@ -46,6 +46,13 @@ def play_hangman():
             word_letters.remove(user_letter)
                 print('')
 
+        # If user guessed character has already been gueseed raise error
+    elif user_letter in used_letters:
+       print('\nYou have already used that letter. Please Guess another letter.')
+    
+    else:
+            print('\nThat is not a valid letter please only a letter.')
+
      
 
     
