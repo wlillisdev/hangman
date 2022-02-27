@@ -25,11 +25,16 @@ def play_hangman():
     Play a game of hangman.
     Displays  lives and layout for player to play game.
     """
-    word = get_word() # get random word from get_word
-    word_letters = set(word)  # letters that are in word
-    alphabet = set(string.ascii_uppercase) # list of character in alphabet uppercase
-    used_letters = set()  # letters that the user has guessed
-    lives = 7   # number of tries the user has before game over
+    # get random word from get_word
+    word = get_word()
+    # letters that are in word
+    word_letters = set(word)
+    # list of character in alphabet uppercase  
+    alphabet = set(string.ascii_uppercase)
+    # letters that the user has guessed 
+    used_letters = set()
+    # number of tries the user has before game is over
+    lives = 7   
 
     
     
