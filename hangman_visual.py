@@ -1,6 +1,6 @@
 lives_visual_dict = {
         0: """
-                unlucky
+                   R.I.P
                 ___________
                | /        |
                |/        (-)
@@ -11,7 +11,7 @@ lives_visual_dict = {
         1: """
                 ___________
                | /        |
-               |/        ( )
+               |/        ( )-help me
                |          |
                |         /
                |
@@ -19,7 +19,7 @@ lives_visual_dict = {
         2: """
                 ___________
                | /        |
-               |/        ( )
+               |/        ( )-my neck hurts
                |          |
                |
                |
