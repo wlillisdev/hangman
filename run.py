@@ -62,7 +62,7 @@ def play_hangman():
 
             # If user guessed character that has already been gueseed give feedback
         elif user_letter in used_letters:
-        print('\nYou have already picked that letter. Please Guess a new letter.')
+            print('\nYou have already picked that letter. Please Guess a new letter.')
             # If user guessed a character that is not a letter give user feedback
         else:
             print('\nThat is not a valid letter, please pick a letter.')
