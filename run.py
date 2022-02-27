@@ -1,6 +1,8 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
+# import randon python standard library
 import random
-from words import word_list
+# import words
+from words import words
 
 
 def get_word():
@@ -8,11 +10,12 @@ def get_word():
     This will pick at random a word from the words_list
     that the player will have to guess.
     """
-    word = random.choice(word_list)
+    # Select a randon word from the list
+    word = random.choice(words)
     # Return word in uppercase
     return word.upper()
     
-print (word)
+
     
 
 def play_hangman(word):
