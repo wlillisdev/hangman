@@ -81,31 +81,45 @@ def hangman():
         print(lives_visual_dict[lives])
         print('Game Over you died:( The word was', word)
         user_lose()
-        # restart_game()
+        restart_game()
     else:
         print('You are clever you guessed the word', word, '\nWell Done!!')
         user_wins()
-        # restart_game()
+        restart_game()
 
 
-# def restart_game():
-#     """ Gives player option to restart, otherwise returns to title screen """
-#     game_restart = False
+def restart_game():
+    """
+    Gives User Option to restart a game of hangman when game finished.
+    otherwise it will returns user to title screen
+    """
+    
+    game_restart = False
 
-#     while not game_restart:
-#         restart = input('Would you like to play Hangman? (Y/N)\n').upper()
+    while not game_restart:
+        restart = input('Would you like to play Hangman? (Y/N)\n').upper()
 
-#         if restart == "Y":
-#             game_restart = True
-#             hangman()
 
-#         elif restart == "N":
-#             game_restart = True
-#             print('Goodbye!')
-#             start_game()
+        try:
+            if restart == "Y":
+                game_restart = True
+                hangman()
 
-#         else:
-#             print('You must select Y or N. Please try again.')
+            elif restart == "N":
+                game_restart = True
+                print("\n")
+                print('Bye for Now, Mind Your Neck ;)')
+                # start_game()
+                
+
+            else:
+                raise ValueError(
+                    f" You must type in Y or N. You typed {(restart)}"
+                )
+
+       
+
+       
 
 
 # if __name__ == "__main__":
@@ -121,14 +135,14 @@ def user_wins():
         | |     / (_)___  ____  ___  _____
         | | /| / / / __ \/ __ \/ _ \/ ___/
         | |/ |/ / / / / / / / /  __/ / 
-        |__/|__/_/_/ /_/_/ /_/\___/_/   
+        |__/|__/_/_/ /_/_/ /_/\___/_/ 
         """
      )
 
 
 def user_lose():
     """
-    Display Game Over! graphic
+    Display user lose! banner
     """
     print(
          """
@@ -141,7 +155,7 @@ def user_lose():
         | | | \\ \\ / / _ \\ '__| |
         | |_| |\\ V /  __/ |  |_|
          \\___/  \\_/ \\___|_|  (_)
-        """ 
+        """
         )
 
 hangman()
