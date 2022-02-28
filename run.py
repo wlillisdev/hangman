@@ -84,38 +84,56 @@ def hangman():
         restart_game()
     else:
         print('You are clever you guessed the word', word, '\nWell Done!!')
-        user_wins()
+        user_win()
         restart_game()
 
 
-def restart_game():
-    """
-    Gives User Option to restart a game of hangman when game finished.
-    otherwise it will returns user to title screen
-    """
+# def restart_game():
+#     """
+#     Gives User Option to restart a game of hangman when game finished.
+#     otherwise it will returns user to title screen
+#     """
     
+#     game_restart = False
+
+#     # while not game_restart:
+#     #     restart = input('Would you like to play Hangman? (Y/N)\n').upper()
+
+#     #     try:
+#     #         if restart == "Y":
+#     #             game_restart = True
+#     #             hangman()
+
+#     #         elif restart == "N":e
+
+#     #             game_restart = True
+#     #             print("\n")
+#     #             print('Bye for Now, Mind Your Neck ;)')
+#     #             # start_game()
+                
+
+#     #         else:
+#     #             raise ValueError(
+#     #                 f" You must type in Y or N. You typed {(restart)}"
+#     #             )
+def restart_game():
+    """ Gives player option to restart, otherwise returns to title screen """
     game_restart = False
 
     while not game_restart:
         restart = input('Would you like to play Hangman? (Y/N)\n').upper()
 
-        try:
-            if restart == "Y":
-                game_restart = True
-                hangman()
+        if restart == "Y":
+            game_restart = True
+            hangman()
 
-            elif restart == "N":
-                game_restart = True
-                print("\n")
-                print('Bye for Now, Mind Your Neck ;)')
-                # start_game()
-                
+        elif restart == "N":
+            game_restart = True
+            print('Goodbye!')
+            start_game()
 
-            else:
-                raise ValueError(
-                    f" You must type in Y or N. You typed {(restart)}"
-                )
-
+        else:
+            print('You must select Y or N. Please try again.')
 
        
 
@@ -125,7 +143,8 @@ def restart_game():
 # if __name__ == "__main__":
 #     start_game()
 
-def user_wins():
+
+def user_win():
     """
     Display winner! banner
     """
