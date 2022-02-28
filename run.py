@@ -121,7 +121,7 @@ def restart_game():
     game_restart = False
 
     while not game_restart:
-        restart = input('Would you like to play Hangman? (Y/N)\n').upper()
+        restart = input('Would you like to play Another Game of Hangman? (Y/N)\n').upper()
 
         if restart == "Y":
             game_restart = True
@@ -129,11 +129,11 @@ def restart_game():
 
         elif restart == "N":
             game_restart = True
-            print('Goodbye!')
-            start_game()
+            print('Bye for now. Mind your neck i will be waiting ;)')
+            # start_game()
 
         else:
-            print('You must select Y or N. Please try again.')
+            print(f" You must type in Y or N. You typed {(restart)}")
 
        
 
