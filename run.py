@@ -1,4 +1,6 @@
-# import randon python standard library
+"""
+    import modules & libaries
+"""
 import random
 # import words
 from words import words
@@ -10,6 +12,7 @@ from hangman_visual import lives_visual_dict
 import colorama
 from colorama import Fore
 colorama.init(autoreset=True)
+
 
 def get_word():
     """
@@ -33,16 +36,16 @@ def hangman():
     word = get_word()
     # letters that are in word
     word_letters = set(word)
-    # list of character in alphabet uppercase  
+    # list of character in alphabet uppercase
     alphabet = set(string.ascii_uppercase)
-    # letters that the user has guessed 
-    used_letters = set()  
+    # letters that the user has guessed
+    used_letters = set()
     # number of tries the user has before game is over
     lives = 7
 
     # creat a loop to iterate through input until all the letters guessed
     while len(word_letters) > 0 and lives > 0:
-        
+
         print('You have', lives, 'lives left')
         # letters that have been used
         print('You have used these letters: ', ' '.join(used_letters))
@@ -64,7 +67,7 @@ def hangman():
 
             else:
                 # takes away a life if wrong
-                lives = lives - 1  
+                lives = lives - 1
                 print('Letter is not in the word.')
         # If user guessed character that has already been guessed give feedback
         elif user_letter in used_letters:
@@ -77,9 +80,11 @@ def hangman():
     if lives == 0:
         print(lives_visual_dict[lives])
         print('Game Over you died:( The word was', word)
+        user_wins()
         # restart_game()
     else:
         print('You are clever you guessed the word', word, '\nWell Done!!')
+        
         # restart_game()
 
 
@@ -105,4 +110,36 @@ def hangman():
 
 # if __name__ == "__main__":
 #     start_game()
+
+def user_wins():
+    """
+    Display You Win! graphic
+    """
+    print(
+        """
+         _       ___                      
+        | |     / (_)___  ____  ___  _____
+        | | /| / / / __ \/ __ \/ _ \/ ___/
+        | |/ |/ / / / / / / / /  __/ / 
+        |__/|__/_/_/ /_/_/ /_/\___/_/   
+        """
+     )
 hangman()
+
+def player_wins():
+    """
+    Display You Win! graphic
+    """
+    print(
+        text_colors.GREEN + """
+        __   __
+        \\ \\ / /__  _   _
+         \\ V / _ \\| | | |
+          | | (_) | |_| |
+          |_|\\___/_\\__,_| _
+        __      _(_)_ __ | |
+        \\ \\ /\\ / / | '_ \\| |
+         \\ V  V /| | | | |_|
+          \\_/\\_/ |_|_| |_(_)
+        """ + text_colors.WHITE
+        )
