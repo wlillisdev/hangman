@@ -99,7 +99,6 @@ def restart_game():
     while not game_restart:
         restart = input('Would you like to play Hangman? (Y/N)\n').upper()
 
-
         try:
             if restart == "Y":
                 game_restart = True
@@ -116,6 +115,7 @@ def restart_game():
                 raise ValueError(
                     f" You must type in Y or N. You typed {(restart)}"
                 )
+
 
        
 
