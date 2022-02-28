@@ -80,11 +80,11 @@ def hangman():
     if lives == 0:
         print(lives_visual_dict[lives])
         print('Game Over you died:( The word was', word)
-        user_wins()
+        user_lose()
         # restart_game()
     else:
         print('You are clever you guessed the word', word, '\nWell Done!!')
-        
+        user_wins()
         # restart_game()
 
 
@@ -113,7 +113,7 @@ def hangman():
 
 def user_wins():
     """
-    Display You Win! graphic
+    Display winner! banner
     """
     print(
         """
@@ -124,22 +124,24 @@ def user_wins():
         |__/|__/_/_/ /_/_/ /_/\___/_/   
         """
      )
-hangman()
 
-def player_wins():
+
+def user_lose():
     """
-    Display You Win! graphic
+    Display Game Over! graphic
     """
     print(
-        text_colors.GREEN + """
-        __   __
-        \\ \\ / /__  _   _
-         \\ V / _ \\| | | |
-          | | (_) | |_| |
-          |_|\\___/_\\__,_| _
-        __      _(_)_ __ | |
-        \\ \\ /\\ / / | '_ \\| |
-         \\ V  V /| | | | |_|
-          \\_/\\_/ |_|_| |_(_)
-        """ + text_colors.WHITE
+         """
+          ____
+         / ___| __ _ _ __ ___   ___
+        | |  _ / _` | '_ ` _ \\ / _ \\
+        | |_| | (_| | | | | | |  __/
+         \\____|\\__,_|_| |_| |_|\\___|
+         / _ \\__   _____ _ __| |
+        | | | \\ \\ / / _ \\ '__| |
+        | |_| |\\ V /  __/ |  |_|
+         \\___/  \\_/ \\___|_|  (_)
+        """ 
         )
+
+hangman()
