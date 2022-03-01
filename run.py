@@ -53,14 +53,14 @@ def hangman():
         print('You have', lives, 'lives left')
         # letters that have been used
         print('You have used these letters: ', ' '.join(used_letters))
-        print('=============================================')
+        print(Fore.GREEN + '=============================================')
 
         # Tells the user what the current word with dashes (ie S - - P)
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
         print(lives_visual_dict[lives])
         
-        print('=============================================')
+        print(Fore.GREEN + '=============================================')
         print('Current word: ', ' '.join(word_list))
         
 
@@ -86,15 +86,15 @@ def hangman():
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(lives_visual_dict[lives])
-        print('=============================================')
+        print(Fore.GREEN + '=============================================')
         print(Fore.RED + 'Game Over you died:( The word was', Fore.CYAN + word)
         user_lose()
-        print('=============================================')
+        print(Fore.GREEN + '=============================================')
         restart_game()
     else:
         print('You are clever you guessed the word', word, '\nWell Done!!')
         user_win()
-        print('=============================================')
+        print(Fore.GREEN + '=============================================')
         restart_game()
 
 
