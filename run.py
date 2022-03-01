@@ -49,11 +49,13 @@ def hangman():
         print('You have', lives, 'lives left')
         # letters that have been used
         print('You have used these letters: ', ' '.join(used_letters))
+        print('=============================================')
 
         # Tells the user what the current word with dashes (ie S - - P)
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
         print(lives_visual_dict[lives])
+        print('===========================================')
         print('Current word: ', ' '.join(word_list))
 
         # Ask the users for a letter guess
@@ -79,6 +81,7 @@ def hangman():
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(lives_visual_dict[lives])
+        print('===========================================')
         print('Game Over you died:( The word was', word)
         user_lose()
         restart_game()
@@ -88,34 +91,6 @@ def hangman():
         restart_game()
 
 
-# def restart_game():
-#     """
-#     Gives User Option to restart a game of hangman when game finished.
-#     otherwise it will returns user to title screen
-#     """
-    
-#     game_restart = False
-
-#     # while not game_restart:
-#     #     restart = input('Would you like to play Hangman? (Y/N)\n').upper()
-
-#     #     try:
-#     #         if restart == "Y":
-#     #             game_restart = True
-#     #             hangman()
-
-#     #         elif restart == "N":e
-
-#     #             game_restart = True
-#     #             print("\n")
-#     #             print('Bye for Now, Mind Your Neck ;)')
-#     #             # start_game()
-                
-
-#     #         else:
-#     #             raise ValueError(
-#     #                 f" You must type in Y or N. You typed {(restart)}"
-#     #             )
 def restart_game():
     """ Gives player option to restart, otherwise returns to title screen """
     game_restart = False
@@ -135,13 +110,9 @@ def restart_game():
         else:
             print(f" You must type in Y or N. You typed {(restart)}")
 
-       
-
-       
 
 
-# if __name__ == "__main__":
-#     start_game()
+
 
 
 def user_win():
@@ -178,3 +149,6 @@ def user_lose():
         )
 
 hangman()
+
+# if __name__ == "__main__":
+#     start_game()
