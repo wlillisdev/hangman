@@ -55,7 +55,7 @@ def hangman():
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
         print(lives_visual_dict[lives])
-        print('===========================================')
+        print('=========================================')
         print('Current word: ', ' '.join(word_list))
 
         # Ask the users for a letter guess
@@ -66,7 +66,6 @@ def hangman():
             # If guess is in the word it will remove from word_letters
             if user_letter in word_letters:
                 word_letters.remove(user_letter)
-
             else:
                 # takes away a life if wrong
                 lives = lives - 1
@@ -84,10 +83,12 @@ def hangman():
         print('===========================================')
         print('Game Over you died:( The word was', word)
         user_lose()
+        print('===========================================')
         restart_game()
     else:
         print('You are clever you guessed the word', word, '\nWell Done!!')
         user_win()
+        print('===========================================')
         restart_game()
 
 
