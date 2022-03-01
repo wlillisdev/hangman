@@ -12,10 +12,11 @@ from hangman_visual import lives_visual_dict
 import colorama
 from colorama import Fore
 colorama.init(autoreset=True)
+# os module used to clear termainal
 import os
 
 
-
+# Pick Word from list of words
 def get_word():
     """
     This will pick at random a word from the words_list
@@ -44,6 +45,7 @@ def hangman():
     used_letters = set()
     # number of tries the user has before game is over
     lives = 7
+    
 
     # creat a loop to iterate through input until all the letters guessed
     while len(word_letters) > 0 and lives > 0:
@@ -57,8 +59,10 @@ def hangman():
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
         print(lives_visual_dict[lives])
-        print('=========================================')
+        
+        print('=============================================')
         print('Current word: ', ' '.join(word_list))
+        
 
         # Ask the users for a letter guess
         user_letter = input('Guess a letter:\n').upper()
@@ -71,26 +75,26 @@ def hangman():
             else:
                 # takes away a life if wrong
                 lives = lives - 1
-                print('Letter is not in the word.')
+                print(Fore.RED + 'Letter is not in the word.')
         # If user guessed character that has already been guessed give feedback
         elif user_letter in used_letters:
-            print('You have already used that letter. Please try again.')
+            print(Fore.RED + 'You have already used that letter. Please try again.')
         # If user guessed a character that is not a letter give user feedback
         else:
-            print('Invalid character. Please try again with a letter.')
+            print(Fore.RED + 'Invalid character. Please try again with a letter.')
 
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(lives_visual_dict[lives])
-        print('===========================================')
-        print('Game Over you died:( The word was', word)
+        print('=============================================')
+        print(Fore.RED + 'Game Over you died:( The word was', Fore.CYAN + word)
         user_lose()
-        print('===========================================')
+        print('=============================================')
         restart_game()
     else:
         print('You are clever you guessed the word', word, '\nWell Done!!')
         user_win()
-        print('===========================================')
+        print('=============================================')
         restart_game()
 
 
