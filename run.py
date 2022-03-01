@@ -12,6 +12,8 @@ from hangman_visual import lives_visual_dict
 import colorama
 from colorama import Fore
 colorama.init(autoreset=True)
+import os
+
 
 
 def get_word():
@@ -101,6 +103,7 @@ def restart_game():
 
         if restart == "Y":
             game_restart = True
+            clear_terminal()
             hangman()
 
         elif restart == "N":
@@ -148,6 +151,15 @@ def user_lose():
          \\___/  \\_/ \\___|_|  (_)
         """
         )
+
+
+def clear_terminal():
+    """
+    Clearing the terminal.
+    code from http://www.coding4you.at/inf_tag/beginners_python_cheat_sheet.pdf
+    """
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 hangman()
 
