@@ -45,24 +45,22 @@ def hangman():
     used_letters = set()
     # number of tries the user has before game is over
     lives = 7
-    
-
     # creat a loop to iterate through input until all the letters guessed
     while len(word_letters) > 0 and lives > 0:
-
+        print(Fore.GREEN + '=============================================')
+        
         print('You have', lives, 'lives left')
         # letters that have been used
         print('You have used these letters: ', ' '.join(used_letters))
+        
         print(Fore.GREEN + '=============================================')
 
         # Tells the user what the current word with dashes (ie S - - P)
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
         print(lives_visual_dict[lives])
-        
         print(Fore.GREEN + '=============================================')
         print('Current word: ', ' '.join(word_list))
-        
 
         # Ask the users for a letter guess
         user_letter = input('Guess a letter:\n').upper()
@@ -92,7 +90,7 @@ def hangman():
         print(Fore.GREEN + '=============================================')
         restart_game()
     else:
-        print('You are clever you guessed the word', word, '\nWell Done!!')
+        print('You are clever you guessed the word', Fore.CYAN + word, '\nWell Done!!')
         user_win()
         print(Fore.GREEN + '=============================================')
         restart_game()
@@ -117,9 +115,6 @@ def restart_game():
 
         else:
             print(f" You must type in Y or N. You typed {(restart)}")
-
-
-
 
 
 
