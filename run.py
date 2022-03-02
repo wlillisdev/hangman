@@ -20,7 +20,8 @@ colorama.init(autoreset=True)
 def start_screen():
     """Sets start screen  up for the user asking for name
     and if they would like to start"""
-    print(Fore.YELLOW + """
+    print(
+        Fore.YELLOW + """
             ██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███╗   ███╗ █████╗ ███╗   ██╗
             ██║  ██║██╔══██╗████╗  ██║██╔════╝ ████╗ ████║██╔══██╗████╗  ██║
             ███████║███████║██╔██╗ ██║██║  ███╗██╔████╔██║███████║██╔██╗ ██║
@@ -30,7 +31,7 @@ def start_screen():
         """
     )
     name = input('So What is your name ?\n')
-    print(f'Welcome, {name} i hope you are ready...')
+    print(f'Welcome, {name} I hope you are ready...')
     print(f'The last, {name} that played is still hanging around ;)')
     if input(Fore.CYAN + 'Press Y to play? (Y)').upper() == "Y":
         play_hangman()
@@ -71,16 +72,16 @@ def play_hangman():
     lives = 7
     # creat a loop to iterate through input until all the letters guessed
     while len(word_letters) > 0 and lives > 0:
-        print(Fore.GREEN + '=============================================')
+        print(Fore.YELLOW + '=============================================')
         print('You have', lives, 'lives left')
         # letters that have been used
-        print('You have used these letters: ', ' '.join(used_letters))
-        print(Fore.GREEN + '=============================================')
+        print('You have used these letters: '.upper(), ' '.join(used_letters))
+        print(Fore.YELLOW + '=============================================')
         # Tells the user what the current word with dashes (ie S - - P)
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
         print(lives_visual_dict[lives])
-        print(Fore.GREEN + '=============================================')
+        print(Fore.YELLOW + '=============================================')
         print('Current word: ', ' '.join(word_list))
 
         # Ask the users for a letter guess
@@ -105,15 +106,15 @@ def play_hangman():
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(lives_visual_dict[lives])
-        print(Fore.GREEN + '=============================================')
+        print(Fore.YELLOW + '=============================================')
         print(Fore.RED + 'Game Over :( The word was', Fore.CYAN + word)
         user_lose()
-        print(Fore.GREEN + '=============================================')
+        print(Fore.YELLOW + '=============================================')
         restart_game()
     else:
         print('You are clever you guessed the word', Fore.CYAN + word, )
         user_win()
-        print(Fore.GREEN + '=============================================')
+        print(Fore.YELLOW + '=============================================')
         restart_game()
 
 
@@ -144,9 +145,9 @@ def user_win():
     """
     Display winner! banner
     """
-    print(Fore.GREEN +
-        """
-        _       ___                      
+    print(
+        Fore.GREEN + """
+         _       ___                      
         | |     / (_)___  ____  ___  _____
         | | /| / / / __ \/ __ \/ _ \/ ___/
         | |/ |/ / / / / / / / /  __/ / 
@@ -159,8 +160,8 @@ def user_lose():
     """
     Display user lose! banner
     """
-    print(Fore.RED +
-         """
+    print(
+        Fore.RED + """
             __   __                
             \ \ / /__  _   _       
              \ V / _ \| | | |      
@@ -170,7 +171,7 @@ def user_lose():
             | |   / _ \/ __|/ _ \ |
             | |__| (_) \__ \  __/_|
             |_____\___/|___/\___(_)
-         """
+        """
     )
 
 
