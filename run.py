@@ -15,6 +15,29 @@ colorama.init(autoreset=True)
 # os module used to clear termainal
 import os
 
+def start_screen():
+    """Sets the game up for the user asking for name
+    and if they would like to start"""
+    print(
+        """
+        ██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███╗   ███╗ █████╗ ███╗   ██╗
+        ██║  ██║██╔══██╗████╗  ██║██╔════╝ ████╗ ████║██╔══██╗████╗  ██║
+        ███████║███████║██╔██╗ ██║██║  ███╗██╔████╔██║███████║██╔██╗ ██║
+        ██╔══██║██╔══██║██║╚██╗██║██║   ██║██║╚██╔╝██║██╔══██║██║╚██╗██║
+        ██║  ██║██║  ██║██║ ╚████║╚██████╔╝██║ ╚═╝ ██║██║  ██║██║ ╚████║
+        ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+        """
+    )
+    name = input('So What is your name ?\n')
+    print(f'Welcome, {name} i hope you are ready...')
+    if input('Press Y if you are ready to play? (Y)').upper() == "Y":
+        hangman()
+
+    else:
+         print(f" You must type in Y or N. You typed {(input)}")
+         start_Screen()
+
+
 
 # Pick Word from list of words
 def get_word():
@@ -26,6 +49,8 @@ def get_word():
     word = random.choice(words)
     # Return word in uppercase
     return word.upper()
+
+
 
 
 # function for game
@@ -111,7 +136,7 @@ def restart_game():
         elif restart == "N":
             game_restart = True
             print('Bye for now. Mind your neck i will be waiting ;)')
-            # start_game()
+            # start_screen()
 
         else:
             print(f" You must type in Y or N. You typed {(restart)}")
@@ -154,13 +179,11 @@ def user_lose():
 
 def clear_terminal():
     """
-    Clearing the terminal.
-    code from http://www.coding4you.at/inf_tag/beginners_python_cheat_sheet.pdf
+    Clearing the terminal.when restaring a new game
     """
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
-hangman()
 
-# if __name__ == "__main__":
-#     start_game()
+if __name__ == "__main__":
+    start_()
