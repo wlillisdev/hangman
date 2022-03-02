@@ -111,12 +111,12 @@ def hangman():
     if lives == 0:
         print(lives_visual_dict[lives])
         print(Fore.GREEN + '=============================================')
-        print(Fore.RED + 'Game Over you died:( The word was', Fore.CYAN + word)
+        print(Fore.RED + 'Game Over you died :( The word was', Fore.CYAN + word)
         user_lose()
         print(Fore.GREEN + '=============================================')
         restart_game()
     else:
-        print('You are clever you guessed the word', Fore.CYAN + word, '\nWell Done!!')
+        print('You are clever  you guessed the word', Fore.CYAN + word, '\nWell Done!!')
         user_win()
         print(Fore.GREEN + '=============================================')
         restart_game()
@@ -127,7 +127,7 @@ def restart_game():
     game_restart = False
 
     while not game_restart:
-        restart = input('Would you like to play Another Game of Hangman? (Y/N)\n').upper()
+        restart = input('Would you like to play Another Game of Hangman ? (Y/N)\n').upper()
 
         if restart == "Y":
             game_restart = True
@@ -136,8 +136,9 @@ def restart_game():
 
         elif restart == "N":
             game_restart = True
-            print('Bye for now. Mind your neck i will be waiting ;)')
-            # start_screen()
+            print('Bye for now . Mind your neck i will be waiting ;)')
+            clear_terminal()
+            start_screen()
 
         else:
             print(f" You must type in Y or N. You typed {(restart)}")
