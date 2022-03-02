@@ -16,9 +16,9 @@ colorama.init(autoreset=True)
 import os
 
 def start_screen():
-    """Sets the game up for the user asking for name
+    """Sets start screen  up for the user asking for name
     and if they would like to start"""
-    print(
+    print(Fore.YELLOW +
         """
         ██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███╗   ███╗ █████╗ ███╗   ██╗
         ██║  ██║██╔══██╗████╗  ██║██╔════╝ ████╗ ████║██╔══██╗████╗  ██║
@@ -31,12 +31,14 @@ def start_screen():
     name = input('So What is your name ?\n')
     print(f'Welcome, {name} i hope you are ready...')
     print(f'The last, {name} that played is still hanging around ;)')
-    if input('Press Y if you are ready to play? (Y)').upper() == "Y":
-        hangman()
+    if input(Fore.CYAN + 'Press Y when you are ready to play? (Y)').upper() == "Y":
+        play_hangman()
 
     else:
-         print(f" You must type in Y or N. You typed {(input)}")
-         start_Screen()
+         print(f"You must type in Y or are you afraid to play {name}?")
+         start_screen()
+
+         
 
 
 
@@ -55,7 +57,7 @@ def get_word():
 
 
 # function for game
-def hangman():
+def play_hangman():
     """
     Play a game of hangman.
     Displays  lives and layout for player to play game.
@@ -132,7 +134,7 @@ def restart_game():
         if restart == "Y":
             game_restart = True
             clear_terminal()
-            hangman()
+            play_hangman()
 
         elif restart == "N":
             game_restart = True
