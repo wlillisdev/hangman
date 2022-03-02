@@ -122,7 +122,7 @@ def user_win():
     """
     Display winner! banner
     """
-    print(
+    print(Fore.GREEN +
         """
          _       ___                      
         | |     / (_)___  ____  ___  _____
@@ -137,7 +137,7 @@ def user_lose():
     """
     Display user lose! banner
     """
-    print(
+    print(Fore.RED +
          """
             __   __                
             \ \ / /__  _   _       
