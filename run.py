@@ -107,7 +107,7 @@ def play_hangman():
     if lives == 0:
         print(lives_visual_dict[lives])
         print(Fore.YELLOW + '=============================================')
-        print(Fore.RED + 'Game Over :( The word was', Fore.CYAN + word)
+        print(Fore.RED + Fore.RED + 'Game Over :( The word was', Fore.CYAN + word)
         user_lose()
         print(Fore.YELLOW + '=============================================')
         restart_game()
