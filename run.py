@@ -30,6 +30,7 @@ def start_screen():
     )
     name = input('So What is your name ?\n')
     print(f'Welcome, {name} i hope you are ready...')
+    print(f'The last, {name} that played is still hanging around ;)')
     if input('Press Y if you are ready to play? (Y)').upper() == "Y":
         hangman()
 
@@ -186,4 +187,4 @@ def clear_terminal():
 
 
 if __name__ == "__main__":
-    start_()
+    start_screen()
