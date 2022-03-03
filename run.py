@@ -6,6 +6,8 @@ import os
 # import words
 import random
 from words import words
+# import type writer function
+from intro_screen import
 # import libary of ascii_letters
 import string
 # import handman tries pictuers
@@ -30,6 +32,10 @@ def start_screen():
             ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
         """
     )
+    typewriter(f"""
+        Y O U   H A V E   A   P R E T T Y   N E C K   T O\t\n
+        P L A Y   T H I S   G A M E   B Y   T H E   W A Y ! !\t\n
+        E N T E R   Y O U R   N A M E\t\n\nA N D   G O O D   L U C K ! !\n""")
     name = input('So What is your name ?\n')
     print(f'Welcome, {name} I hope you are ready...')
     print(f'The last, {name} that played is still hanging around ;)')
