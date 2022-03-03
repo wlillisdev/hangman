@@ -37,13 +37,14 @@ def start_screen():
     THE RULES ARE SIMPLE, YOU HAVE 7 LIVES\t\n
     YOU MUST GUESS THE HIDDEN WORD, EVERYTIME YOU GUESS WRONG....\t\n
     YOU WILL LOSE A LIFE AND THE ROPE WILL TIGHTEN....\t\n
-    THERE WILL BE ONLY BE ONE WINNER THE STAKES ARE HIGH\t\n
+    THERE WILL BE ONLY ONE WINNER....THE STAKES ARE HIGH\t\n
     GOOD LUCK YOU WILL NEED IT\n
     \n""")
     name = input('SO WHAT IS YOUR NAME ?\n')
-    print(f'WELCOME, {name.upper()} I HOPE YOU ARE READY...')
-    print(f'THE LAST, {name.upper()} THAT PLAYED IS STILL HANGING AROUND ;)')
-    if input(Fore.CYAN + 'PRESS Y TO PLAY? (Y)').upper() == "Y":
+    typewriter(f"""'WELCOME, {name.upper()} I HOPE YOU ARE READY...\n""")
+    typewriter(f"""THE LAST, {name.upper()} THAT PLAYED
+    ..... IS STILL HANGING AROUND ;)""")
+    if input(Fore.CYAN + '\n PRESS Y TO PLAY? (Y)').upper() == "Y":
         play_hangman()
 
     else:
