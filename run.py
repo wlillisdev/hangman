@@ -5,11 +5,11 @@ import sys
 import time
 # os module used to clear termainal
 import os
+# import libary of ascii_letters
+import string
 # import words
 import random
 from words import words
-# import libary of ascii_letters
-import string
 # import handman tries pictuers
 from hangman_visual import lives_visual_dict
 # import colorama for adding colour
@@ -152,6 +152,7 @@ def restart_game():
             print(f" You must type in Y or N. You typed {(restart)}")
 
 
+# Banner appears at end of game
 def user_win():
     """
     Display this graphic when users wins game
@@ -171,6 +172,7 @@ def user_win():
         )
 
 
+# Banner appears at end of game
 def user_lose():
     """
     Display Game Over when player loses!
@@ -190,16 +192,18 @@ def user_lose():
         )
 
 
-def typewriter(string):
+# Typewriter used on the intro screen
+def typewriter(line):
     """
    Typewriter for the start screen into
     """
-    for i in string:
+    for i in line:
         sys.stdout.write(i)
         sys.stdout.flush()
         time.sleep(0.05)
 
 
+# Clear Terminal
 def clear_terminal():
     """
     Clearing the terminal.when restaring a new game
