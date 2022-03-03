@@ -6,8 +6,6 @@ import os
 # import words
 import random
 from words import words
-# import type writer function
-from intro_screen import
 # import libary of ascii_letters
 import string
 # import handman tries pictuers
@@ -32,10 +30,6 @@ def start_screen():
             ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
         """
     )
-    typewriter(f"""
-        Y O U   H A V E   A   P R E T T Y   N E C K   T O\t\n
-        P L A Y   T H I S   G A M E   B Y   T H E   W A Y ! !\t\n
-        E N T E R   Y O U R   N A M E\t\n\nA N D   G O O D   L U C K ! !\n""")
     name = input('So What is your name ?\n')
     print(f'Welcome, {name} I hope you are ready...')
     print(f'The last, {name} that played is still hanging around ;)')
@@ -149,36 +143,40 @@ def restart_game():
 
 def user_win():
     """
-    Display winner! banner
+    Display this graphic when users wins game
     """
     print(
         Fore.GREEN + """
-         _       ___                   
-        | |     / (_)___  ____  ___  _____
-        | | /| / / / __ \/ __ \/ _ \/ ___/
-        | |/ |/ / / / / / / / /  __/ / 
-        |__/|__/_/_/ /_/_/ /_/\___/_/ 
+        __   __
+        \\ \\ / /__  _   _
+         \\ V / _ \\| | | |
+          | | (_) | |_| |
+          |_|\\___/_\\__,_| _
+        __      _(_)_ __ | |
+        \\ \\ /\\ / / | '_ \\| |
+         \\ V  V /| | | | |_|
+          \\_/\\_/ |_|_| |_(_)
         """
-    )
+        )
 
 
 def user_lose():
     """
-    Display user lose! banner
+    Display Game Over when player loses!
     """
     print(
         Fore.RED + """
-            __   __                    
-            \ \ / /__  _   _       
-             \ V / _ \| | | |      
-              | | (_) | |_| |     
-             _|_|\___/ \__,_|    _ 
-            | |    ___  ___  ___| |
-            | |   / _ \/ __|/ _ \ |
-            | |__| (_) \__ \  __/_|
-            |_____\___/|___/\___(_)
+          ____
+         / ___| __ _ _ __ ___   ___
+        | |  _ / _` | '_ ` _ \\ / _ \\
+        | |_| | (_| | | | | | |  __/
+         \\____|\\__,_|_| |_| |_|\\___|
+         / _ \\__   _____ _ __| |
+        | | | \\ \\ / / _ \\ '__| |
+        | |_| |\\ V /  __/ |  |_|
+         \\___/  \\_/ \\___|_|  (_)
         """
-    )
+        )
 
 
 def clear_terminal():
