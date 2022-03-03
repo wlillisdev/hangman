@@ -73,7 +73,7 @@ def play_hangman():
     # creat a loop to iterate through input until all the letters guessed
     while len(word_letters) > 0 and lives > 0:
         print(Fore.YELLOW + '=============================================')
-        print('You have', lives, 'lives left')
+        print('You have'.upper(), lives, 'lives left'.upper())
         # letters that have been used
         print('You have used these letters: '.upper(), ' '.join(used_letters))
         print(Fore.YELLOW + '=============================================')
@@ -82,7 +82,7 @@ def play_hangman():
             letter if letter in used_letters else '_' for letter in word]
         print(lives_visual_dict[lives])
         print(Fore.YELLOW + '=============================================')
-        print('Current word: ', ' '.join(word_list))
+        print(Fore.GREEN + 'Current word: '.upper(), ' '.join(word_list))
 
         # Ask the users for a letter guess
         user_letter = input('Guess a letter:\n').upper()
@@ -95,24 +95,24 @@ def play_hangman():
             else:
                 # takes away a life if wrong
                 lives = lives - 1
-                print(Fore.RED + 'Letter is not in the word.')
+                print(Fore.RED + 'That Letter is not in the word.'.upper())
         # If user guessed character that has already been guessed give feedback
         elif user_letter in used_letters:
-            print(Fore.RED + 'You have already used that letter,try again.')
+            print(Fore.RED + 'Letter already used,please try again.'.upper())
         # If user guessed a character that is not a letter give user feedback
         else:
-            print(Fore.RED + 'Invalid character,Please usa a letter.')
+            print(Fore.RED + 'Invalid character,Please usa a letter.'.upper())
 
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(lives_visual_dict[lives])
         print(Fore.YELLOW + '=============================================')
-        print(Fore.RED + Fore.RED + 'Game Over.The word was', Fore.CYAN + word)
+        print(Fore.RED + 'Game Over.The word was'.upper(), Fore.CYAN + word)
         user_lose()
         print(Fore.YELLOW + '=============================================')
         restart_game()
     else:
-        print('You are clever you guessed the word', Fore.CYAN + word, )
+        print('You are clever you guessed the word'.upper(), Fore.CYAN + word,)
         user_win()
         print(Fore.YELLOW + '=============================================')
         restart_game()
@@ -147,7 +147,7 @@ def user_win():
     """
     print(
         Fore.GREEN + """
-         _       ___                      
+         _       ___                   
         | |     / (_)___  ____  ___  _____
         | | /| / / / __ \/ __ \/ _ \/ ___/
         | |/ |/ / / / / / / / /  __/ / 
@@ -162,10 +162,10 @@ def user_lose():
     """
     print(
         Fore.RED + """
-            __   __                
+            __   __                    
             \ \ / /__  _   _       
              \ V / _ \| | | |      
-              | | (_) | |_| |      
+              | | (_) | |_| |     
              _|_|\___/ \__,_|    _ 
             | |    ___  ___  ___| |
             | |   / _ \/ __|/ _ \ |
