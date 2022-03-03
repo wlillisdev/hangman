@@ -10,6 +10,7 @@ import string
 # import words
 import random
 from words import words
+
 # import handman tries pictuers
 from hangman_visual import lives_visual_dict
 # import colorama for adding colour
