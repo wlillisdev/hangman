@@ -1,6 +1,8 @@
 """
     import modules & libaries
 """
+import sys
+import time
 # os module used to clear termainal
 import os
 # import words
@@ -30,14 +32,22 @@ def start_screen():
             ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
         """
     )
-    name = input('So What is your name ?\n')
-    print(f'Welcome, {name} I hope you are ready...')
-    print(f'The last, {name} that played is still hanging around ;)')
-    if input(Fore.CYAN + 'Press Y to play? (Y)').upper() == "Y":
+    typewriter("""
+    WELCOME TO HANGMAN\t\n
+    THE RULES ARE SIMPLE, YOU HAVE 7 LIVES\t\n
+    YOU MUST GUESS THE HIDDEN WORD, EVERYTIME YOU GUESS WRONG....\t\n
+    YOU WILL LOSE A LIFE AND THE ROPE WILL TIGHTEN....\t\n
+    THERE WILL BE ONLY BE ONE WINNER THE STAKES ARE HIGH\t\n
+    GOOD LUCK YOU WILL NEED IT\n
+    \n""")
+    name = input('SO WHAT IS YOUR NAME ?\n')
+    print(f'WELCOME, {name.upper()} I HOPE YOU ARE READY...')
+    print(f'THE LAST, {name.upper()} THAT PLAYED IS STILL HANGING AROUND ;)')
+    if input(Fore.CYAN + 'PRESS Y TO PLAY? (Y)').upper() == "Y":
         play_hangman()
 
     else:
-        print(f"You must type in Y or are you afraid to play {name}?")
+        print(f"YOU MUST TYPE IN Y OR ARE YOU AFRAID TO PLAY {name.upper()}?")
         start_screen()
 
 
@@ -179,11 +189,22 @@ def user_lose():
         )
 
 
+def typewriter(string):
+    """
+   Typewriter for the start screen into
+    """
+    for i in string:
+        sys.stdout.write(i)
+        sys.stdout.flush()
+        time.sleep(0.05)
+
+
 def clear_terminal():
     """
     Clearing the terminal.when restaring a new game
     """
     os.system('cls' if os.name == 'nt' else 'clear')
+
 
 if __name__ == "__main__":
     start_screen()
