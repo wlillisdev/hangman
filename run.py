@@ -205,11 +205,11 @@ def typewriter(line):
 
 
 # Clear Terminal
-def clear_terminal():
+def clear():
     """
-    Clearing the terminal.when restaring a new game
+    Clear screen for user on replay
     """
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system("clear")
 
 
 if __name__ == "__main__":
