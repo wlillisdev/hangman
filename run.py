@@ -22,7 +22,8 @@ colorama.init(autoreset=True)
 # Home Screen window when game start
 def start_screen():
     """Sets start screen  up for the user asking for name
-    and if they would like to start"""
+    and if they would like to start
+    """
     print(
         Fore.YELLOW + """
             ██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███╗   ███╗ █████╗ ███╗   ██╗
@@ -33,24 +34,61 @@ def start_screen():
             ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
         """
     )
+    
     typewriter("""
-    WELCOME TO HANGMAN\t\n
-    THE RULES ARE SIMPLE, YOU HAVE 7 LIVES\t\n
-    YOU MUST GUESS THE HIDDEN WORD, EVERYTIME YOU GUESS WRONG....\t\n
-    YOU WILL LOSE A LIFE AND THE ROPE WILL TIGHTEN....\t\n
-    THERE WILL BE ONLY ONE WINNER....THE STAKES ARE HIGH\t\n
-    GOOD LUCK YOU WILL NEED IT\n
-    \n""")
-    name = input('SO WHAT IS YOUR NAME ?\n')
-    typewriter(f"""'WELCOME, {name.upper()} I HOPE YOU ARE READY...\n""")
-    typewriter(f"""THE LAST, {name.upper()} THAT PLAYED
-    ..... IS STILL HANGING AROUND ;)""")
-    if input(Fore.CYAN + '\n PRESS Y TO PLAY? (Y)').upper() == "Y":
-        play_hangman()
+    THERE CAN BE ONLY ONE WINNER, YOU OR THE HANGMAN...\t\n
+    """)
+    # typewriter("""
+    # WELCOME TO HANGMAN\t\n
+    # THE RULES ARE SIMPLE, YOU HAVE 7 LIVES\t\n
+    # YOU MUST GUESS THE HIDDEN WORD, EVERYTIME YOU GUESS WRONG....\t\n
+    # YOU WILL LOSE A LIFE AND THE ROPE WILL TIGHTEN....\t\n
+    # THERE WILL BE ONLY ONE WINNER....THE STAKES ARE HIGH\t\n
+    # GOOD LUCK YOU WILL NEED IT\n
+    # \n""")
+    # name = input('SO WHAT IS YOUR NAME ?\n')
+    # typewriter(f"""'WELCOME, {name.upper()} I HOPE YOU ARE READY...\n""")
+    # typewriter(f"""THE LAST, {name.upper()} THAT PLAYED
+    # ..... IS STILL HANGING AROUND ;)""")
+    # if input(Fore.CYAN + '\n PRESS Y TO PLAY? (Y)').upper() == "Y":
+    #     play_hangman()
 
-    else:
-        print(f"YOU MUST TYPE IN Y OR ARE YOU AFRAID TO PLAY {name.upper()}?")
-        start_screen()
+    # else:
+    #     print(f"YOU MUST TYPE IN Y OR ARE YOU AFRAID TO PLAY {name.upper()}?")
+    #     start_screen()
+    # username = None
+
+    while True:
+        username = input('SO WHAT IS YOUR NAME ?\n')
+
+        if not username.isalpha():
+            print(Fore.RED + 'PLEASE ENTER USERNAME,USERNAME MUSH HAVE CHARACTERS')
+            continue
+        else:
+            typewriter(f"""WELCOME, {username.upper()} I HOPE YOU ARE READY...\n""")
+            typewriter(f"""THE LAST, {username.upper()} THAT PLAYED..... IS STILL HANGING AROUND ;)""")
+            break
+            
+def menu():
+    """
+    Function for games main menu.
+    """
+    print("Hangman Menu")
+    print("1. Hangman Rules")
+    print("2. Start Game")
+    print("3. Exit \n")
+
+    while True:
+        player_choice = input("PLEASE PICK AN OPTION FROM THE MENU")
+
+        if player_choice == '1':
+            instructions()
+        elif player_choice == '2':
+            play_hangman()
+        # elif player_choice == '3':
+        #     exit()
+        else:
+            print("PLEASE PICK A VALID OPTION FROM THE MENU!")
 
 
 # Pick Word from list of words
@@ -140,13 +178,13 @@ def restart_game():
 
         if restart == "Y":
             game_restart = True
-            clear_terminal()
+            clear()
             play_hangman()
 
         elif restart == "N":
             game_restart = True
             print('Bye for now . Mind your neck i will be waiting ;)')
-            clear_terminal()
+            clear()
             start_screen()
 
         else:
@@ -212,5 +250,14 @@ def clear():
     os.system("clear")
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
+#     start_screen()
+def main():
+    """
+    Function to call other functions used
+    """
     start_screen()
+    menu()
+    get_word()
+    play_hangman()
+main()
