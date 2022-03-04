@@ -66,36 +66,46 @@ def start_screen():
             continue
         else:
             typewriter(f"""WELCOME, {username.upper()} I HOPE YOU ARE READY...\n""")
-            typewriter(f"""THE LAST, {username.upper()} THAT PLAYED..... IS STILL HANGING AROUND ;)""")
+            typewriter(f"""THE LAST, {username.upper()} THAT PLAYED\n..... IS STILL HANGING AROUND ;).\n""")
             break
             
 def menu():
     """
     Function for games main menu.
     """
-    print("Hangman Menu")
-    print("1. Hangman Rules")
-    print("2. Start Game")
-    print("3. Exit \n")
+    print(Fore.CYAN + "HANGMAN MENU")
+    print("1. HANGMAN RULES")
+    print(Fore.GREEN + "2. START GAME")
+    print("3. EXIT \n")
 
     while True:
-        player_choice = input("PLEASE PICK AN OPTION FROM THE MENU")
+        player_choice = input(Fore.CYAN + "PLEASE PICK AN OPTION FROM THE MENU ")
 
         if player_choice == '1':
             hangman_rules()
         elif player_choice == '2':
             play_hangman()
-        # elif player_choice == '3':
-        #     exit()
+        elif player_choice == '3':
+            exit()
         else:
             print("PLEASE PICK A VALID OPTION FROM THE MENU!")
+
+
+def exit():
+    """
+    Exit game function
+    """
+    print("THANKS FOR DROPPING IN-BYE FOR NOW")
+    print("IF YOU CHANGE YOUR MIND CLICK THE RUN PROGRAM BOX TOP LEFT-TO START OVER")
+    sys.exit()
+
 
 def hangman_rules():
     """
     Outlines rules of teh game to the user
     """
     typewriter("""
-    WELCOME TO HANGMAN\t\n
+    HANGMAN RULES\t\n
     THE RULES ARE SIMPLE, YOU HAVE 7 LIVES\t\n
     YOU MUST GUESS THE HIDDEN WORD, EVERYTIME YOU GUESS WRONG....\t\n
     YOU WILL LOSE A LIFE AND THE ROPE WILL TIGHTEN....\t\n
@@ -209,12 +219,12 @@ def restart_game():
 
         elif restart == "N":
             game_restart = True
-            print('Bye for now . Mind your neck i will be waiting ;)')
+            print('BYE FOR NOW. MIND YOU NECK I WILL BE WAITING :-)')
             clear()
-            start_screen()
+            menu()
 
         else:
-            print(f" You must type in Y or N. You typed {(restart)}")
+            print(f" YOU MUST TYPE EITHER Y or N. YOU TYPED {(restart)}")
 
 
 # Banner appears at end of game
