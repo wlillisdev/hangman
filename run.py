@@ -1,6 +1,3 @@
-"""
-    import modules & libaries
-"""
 import sys
 import time
 # os module used to clear termainal
@@ -34,30 +31,9 @@ def start_screen():
             ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
         """
     )
-    
     typewriter("""
     THERE CAN BE ONLY ONE WINNER, YOU OR THE HANGMAN...\t\n
     """)
-    # typewriter("""
-    # WELCOME TO HANGMAN\t\n
-    # THE RULES ARE SIMPLE, YOU HAVE 7 LIVES\t\n
-    # YOU MUST GUESS THE HIDDEN WORD, EVERYTIME YOU GUESS WRONG....\t\n
-    # YOU WILL LOSE A LIFE AND THE ROPE WILL TIGHTEN....\t\n
-    # THERE WILL BE ONLY ONE WINNER....THE STAKES ARE HIGH\t\n
-    # GOOD LUCK YOU WILL NEED IT\n
-    # \n""")
-    # name = input('SO WHAT IS YOUR NAME ?\n')
-    # typewriter(f"""'WELCOME, {name.upper()} I HOPE YOU ARE READY...\n""")
-    # typewriter(f"""THE LAST, {name.upper()} THAT PLAYED
-    # ..... IS STILL HANGING AROUND ;)""")
-    # if input(Fore.CYAN + '\n PRESS Y TO PLAY? (Y)').upper() == "Y":
-    #     play_hangman()
-
-    # else:
-    #     print(f"YOU MUST TYPE IN Y OR ARE YOU AFRAID TO PLAY {name.upper()}?")
-    #     start_screen()
-    # username = None
-
     while True:
         username = input('SO WHAT IS YOUR NAME ?\n')
 
@@ -66,20 +42,22 @@ def start_screen():
             continue
         else:
             typewriter(f"""WELCOME, {username.upper()} I HOPE YOU ARE READY...\n""")
-            typewriter(f"""THE LAST, {username.upper()} THAT PLAYED\n..... IS STILL HANGING AROUND ;).\n""")
+            typewriter(f"""THE LAST, {username.upper()} THAT PLAYED..... \n""")
+            typewriter(f"""..... IS STILL HANGING AROUND ;)\n\n""")
             break
-            
+
+
 def menu():
     """
-    Function for games main menu.
+    Function for hangmans main menu.
     """
-    print(Fore.CYAN + "HANGMAN MENU")
+    print(Fore.CYAN + "HANGMAN MENU\n")
     print("1. HANGMAN RULES")
     print(Fore.GREEN + "2. START GAME")
     print("3. EXIT \n")
 
     while True:
-        player_choice = input(Fore.CYAN + "PLEASE PICK AN OPTION FROM THE MENU ")
+        player_choice = input(Fore.CYAN + "PLEASE PICK 1.2 OR 3 FROM THE MENU ")
 
         if player_choice == '1':
             hangman_rules()
@@ -107,9 +85,11 @@ def hangman_rules():
     typewriter("""
     HANGMAN RULES\t\n
     THE RULES ARE SIMPLE, YOU HAVE 7 LIVES\t\n
-    YOU MUST GUESS THE HIDDEN WORD, EVERYTIME YOU GUESS WRONG....\t\n
+    YOU MUST GUESS THE HIDDEN WORD,\t\n
+    EVERYTIME YOU GUESS WRONG....\t\n
     YOU WILL LOSE A LIFE AND THE ROPE WILL TIGHTEN....\t\n
-    THERE WILL BE ONLY ONE WINNER....THE STAKES ARE HIGH\t\n
+    THERE WILL BE ONLY ONE WINNER....\t\n
+    THE STAKES ARE HIGH.....\t\n
     GOOD LUCK YOU WILL NEED IT\n
     \n""")
     # Give option to play or return to menu.
@@ -117,7 +97,7 @@ def hangman_rules():
 
     # Test for valid selection made
     while True:
-        game_on = input("PRESS 1 for YES or 2 FOR NO: ")
+        game_on = input("PRESS 1 FOR YES OR 2 FOR NO: ")
 
         if game_on == '1':
             play_hangman()
@@ -146,6 +126,7 @@ def play_hangman():
     Displays  lives and layout for player to play game.
     And guess the random word
     """
+    clear()
     # get random word from get_word
     word = get_word()
     # letters that are in word
@@ -286,11 +267,9 @@ def clear():
     os.system("clear")
 
 
-# if __name__ == "__main__":
-#     start_screen()
 def main():
     """
-    Function to call other functions used
+    Function to call other functions used in game
     """
     start_screen()
     menu()
