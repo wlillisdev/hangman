@@ -82,13 +82,39 @@ def menu():
         player_choice = input("PLEASE PICK AN OPTION FROM THE MENU")
 
         if player_choice == '1':
-            instructions()
+            hangman_rules()
         elif player_choice == '2':
             play_hangman()
         # elif player_choice == '3':
         #     exit()
         else:
             print("PLEASE PICK A VALID OPTION FROM THE MENU!")
+
+def hangman_rules():
+    """
+    Outlines rules of teh game to the user
+    """
+    typewriter("""
+    WELCOME TO HANGMAN\t\n
+    THE RULES ARE SIMPLE, YOU HAVE 7 LIVES\t\n
+    YOU MUST GUESS THE HIDDEN WORD, EVERYTIME YOU GUESS WRONG....\t\n
+    YOU WILL LOSE A LIFE AND THE ROPE WILL TIGHTEN....\t\n
+    THERE WILL BE ONLY ONE WINNER....THE STAKES ARE HIGH\t\n
+    GOOD LUCK YOU WILL NEED IT\n
+    \n""")
+    # Give option to play or return to menu.
+    print(Fore.CYAN + "WOULD YOU LIKE TO PLAY HAGMAN ? \n")
+
+    # Test for valid selection made
+    while True:
+        game_on = input("PRESS 1 for YES or 2 FOR NO: ")
+
+        if game_on == '1':
+            play_hangman()
+        elif game_on == '2':
+            menu()
+        else:
+            print(Fore.RED + "TRY AGAIN,PICK A VALID OPTION!")
 
 
 # Pick Word from list of words
