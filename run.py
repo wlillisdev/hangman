@@ -60,7 +60,7 @@ def menu():
     print(Fore.YELLOW + '=============================================')
 
     while True:
-        player_choice = input(Fore.CYAN + "PLEASE PICK 1.2.3 FROM THE MENU ")
+        player_choice = input(Fore.CYAN + "PLEASE PICK 1.2.3 FROM THE MENU \n")
 
         if player_choice == '1':
             hangman_rules()
