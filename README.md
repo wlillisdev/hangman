@@ -163,8 +163,8 @@ __Thank You Page__
 - Difficulty Levels
   - There will be 3 difficulty levels, Easy, Medium & Hard, Hard will have 4 lives, Medium 7 lives and easy 10 lives. This will make the game more challenging
 
-  - Leader Board
-  The game will have a points system the user will earn point for correct guesses at the end of the game the users score will be uploaded in to a high scores screen.        
+- Leader Board
+  - The game will have a points system the user will earn point for correct guesses at the end of the game the users score will be uploaded in to a high scores screen.        
 
 - Word Themes 
   - Currently all the words are just random words, it would be interesting if the user could select a theme and the words were directly related to that, for example movies
