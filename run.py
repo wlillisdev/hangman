@@ -33,7 +33,7 @@ def start_screen():
         """
     )
     typewriter("""
-    THERE CAN BE ONLY ONE WINNER, YOU OR THE HANGMAN...\t\n
+    THERE CAN BE ONLY ONE WINNER.....\t\n
     WILL IT BE YOU OR THE HANGMAN...\t\n
     """)
     while True:
