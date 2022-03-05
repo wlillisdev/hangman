@@ -10,7 +10,7 @@ import string
 import random
 from words import words
 # import handman tries pictuers
-from hangman_visual import lives_visual_dict
+from hangman_lives import lives_visual_dict
 # import colorama for adding colour
 import colorama
 from colorama import Fore
@@ -283,7 +283,7 @@ def clear():
     os.system("clear")
 
 
-# Calls main functions of game
+# Calss main functions of game
 def main():
     """
     Function to call other functions used in game
