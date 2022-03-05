@@ -66,12 +66,12 @@ def menu():
         elif player_choice == '2':
             play_hangman()
         elif player_choice == '3':
-            exit()
+            exit_game()
         else:
             print(Fore.RED + "PLEASE PICK A VALID OPTION FROM THE MENU!")
 
 
-def exit():
+def exit_game():
     """
     Exit game function
     """
@@ -156,6 +156,7 @@ def play_hangman():
 
         # Ask the users for a letter guess
         user_letter = input('Guess a letter:\n').upper()
+        clear()
         # If valid letter in alphabet add to user letter set
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
@@ -278,4 +279,4 @@ def main():
     menu()
     get_word()
     play_hangman()
-main()
+main ()
