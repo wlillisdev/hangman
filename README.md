@@ -1,6 +1,6 @@
-# Quiz Master
+# HANGMAN
 
-- You can see the live website [here](https://wlillisdev.github.io/quiz-master/)..
+- You can see the live website [here](https://hangman-wl.herokuapp.com/)..
 
 ![Home page Quizz Master](assets/readme/image-home-new.png)
 
