@@ -4,11 +4,11 @@
 
 ![Home page Quizz Master](images_readme/hangman_home_screen.png)
 
-Home Screen of Hangman
 
-# Aim of Website
+# Aim of Game
 
-The goal of this App is to create an interactive word game that is both fun a challenging for the user.
+The goal of this Game is to create an interactive word game that is both fun a challenging for the user.
+Hangman is a traditional word game that is great for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
 
 
 # User Stories
