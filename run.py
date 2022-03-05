@@ -46,9 +46,11 @@ def start_screen():
             break
 
 
+# Main Menu for game
 def menu():
     """
-    Function for hangmans main menu.
+    Function for hangmans main menu.User can select
+    3 options,Hangman Rules,Play Game and Exit Game
     """
     clear()
     print(Fore.YELLOW + '=============================================\n')
@@ -71,18 +73,21 @@ def menu():
             print(Fore.RED + "PLEASE PICK A VALID OPTION FROM THE MENU!")
 
 
+# User can exit the whole game
 def exit_game():
     """
     Exit game function
     """
     print("THANKS FOR DROPPING IN-BYE FOR NOW")
-    print("IF YOU CHANGE YOUR MIND CLICK THE RUN PROGRAM BOX TOP LEFT-TO START OVER")
+    print("IF YOU CHANGE YOUR MIND")
+    print("CLICK THE RUN PROGRAM BOX TOP LEFT-TO START OVER")
     sys.exit()
 
 
+# Rules of the game
 def hangman_rules():
     """
-    Outlines rules of teh game to the user
+    Outlines rules of the game to the user
     """
     clear()
     typewriter("""
@@ -129,6 +134,7 @@ def play_hangman():
     Displays  lives and layout for player to play game.
     And guess the random word
     """
+    # Clears Termainl
     clear()
     # get random word from get_word
     word = get_word()
@@ -150,7 +156,7 @@ def play_hangman():
         # Tells the user what the current word with dashes (ie S - - P)
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
-        print(lives_visual_dict[lives])
+        print(Fore.RED + lives_visual_dict[lives])
         print(Fore.YELLOW + '=============================================')
         print(Fore.GREEN + 'Current word: '.upper(), ' '.join(word_list))
 
