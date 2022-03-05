@@ -1,4 +1,6 @@
+# import os to help clear terminal
 import sys
+# import time for type writer function
 import time
 # os module used to clear termainal
 import os
@@ -40,7 +42,8 @@ def start_screen():
             print(Fore.RED + 'INVALID,USERNAME MUSH HAVE CHARACTERS')
             continue
         else:
-            typewriter(f"""WELCOME, {username.upper()} I HOPE YOU ARE READY...\n""")
+            typewriter(f"""WELCOME, {username.upper()} \n""")
+            typewriter(f""" I HOPE YOU ARE READY...\n""")
             typewriter(f"""THE LAST, {username.upper()} THAT PLAYED..... \n""")
             typewriter("""..... IS STILL HANGING AROUND ;)\n\n""")
             break
@@ -52,6 +55,7 @@ def menu():
     Function for hangmans main menu.User can select
     3 options,Hangman Rules,Play Game and Exit Game
     """
+    # Clear Terminal
     clear()
     print(Fore.YELLOW + '=============================================\n')
     print(Fore.CYAN + "HANGMAN MENU\n")
@@ -59,7 +63,7 @@ def menu():
     print(Fore.GREEN + "2. START GAME")
     print(Fore.GREEN + "3. EXIT GAME \n")
     print(Fore.YELLOW + '=============================================')
-
+    # Tests to see if valid selcetion of menu option
     while True:
         player_choice = input(Fore.CYAN + "PLEASE PICK 1.2.3 FROM THE MENU \n")
 
@@ -87,9 +91,11 @@ def exit_game():
 # Rules of the game
 def hangman_rules():
     """
-    Outlines rules of the game to the user
+    Outlines the rules of the game for the user
     """
+    # Clear Terminal
     clear()
+    # Outlines Rules of game using typewriter effect
     typewriter("""
     HANGMAN RULES\t\n
     THE RULES ARE SIMPLE, YOU HAVE 7 LIVES\t\n
@@ -103,7 +109,7 @@ def hangman_rules():
     # Give option to play or return to menu.
     print(Fore.CYAN + "WOULD YOU LIKE TO PLAY HAGMAN ? \n")
 
-    # Test for valid selection made
+    # Test for see for valid selection 
     while True:
         game_on = input("PRESS 1 FOR YES OR 2 FOR NO: ")
 
@@ -156,7 +162,7 @@ def play_hangman():
         # Tells the user what the current word with dashes (ie S - - P)
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
-        print(Fore.RED + lives_visual_dict[lives])
+        print(lives_visual_dict[lives])
         print(Fore.YELLOW + '=============================================')
         print(Fore.GREEN + 'Current word: '.upper(), ' '.join(word_list))
 
@@ -184,7 +190,7 @@ def play_hangman():
     if lives == 0:
         print(lives_visual_dict[lives])
         print(Fore.YELLOW + '=============================================')
-        print(Fore.RED + 'Game Over.The word was'.upper(), Fore.CYAN + word)
+        print(Fore.RED + 'hangman wins.The word was'.upper(), Fore.CYAN + word)
         user_lose()
         print(Fore.YELLOW + '=============================================')
         restart_game()
@@ -202,12 +208,12 @@ def restart_game():
 
     while not game_restart:
         restart = input('Would you like to play Again ? (Y/N)\n').upper()
-
+        # Restarts new game of hangman
         if restart == "Y":
             game_restart = True
             clear()
             play_hangman()
-
+        # returns the user to main menu if they fdont want to play again
         elif restart == "N":
             game_restart = True
             print('BYE FOR NOW. MIND YOU NECK I WILL BE WAITING :-)')
@@ -277,6 +283,7 @@ def clear():
     os.system("clear")
 
 
+# Calls main functions of game
 def main():
     """
     Function to call other functions used in game
@@ -285,4 +292,4 @@ def main():
     menu()
     get_word()
     play_hangman()
-main ()
+main()
