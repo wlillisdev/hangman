@@ -52,7 +52,7 @@ def menu():
     Function for hangmans main menu.
     """
     clear()
-    print(Fore.YELLOW + '=============================================')
+    print(Fore.YELLOW + '=============================================\n')
     print(Fore.CYAN + "HANGMAN MENU\n")
     print(Fore.GREEN + "1. HANGMAN RULES")
     print(Fore.GREEN + "2. START GAME")
@@ -69,7 +69,7 @@ def menu():
         elif player_choice == '3':
             exit()
         else:
-            print("PLEASE PICK A VALID OPTION FROM THE MENU!")
+            print(Fore.RED + "PLEASE PICK A VALID OPTION FROM THE MENU!")
 
 
 def exit():
@@ -85,6 +85,7 @@ def hangman_rules():
     """
     Outlines rules of teh game to the user
     """
+    clear()
     typewriter("""
     HANGMAN RULES\t\n
     THE RULES ARE SIMPLE, YOU HAVE 7 LIVES\t\n
