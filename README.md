@@ -2,7 +2,7 @@
 
 - You can see the live website [here](https://hangman-wl.herokuapp.com/)..
 
-![Home page Quizz Master](assets/readme/image-home-new.png)
+![Home page Quizz Master](images_readme/hangman_home_screen.png)
 
 This website is designed for Quiz Master who is an online quizz company. Their aim is to become the market  leader in online quizzes and be a hub for quizz lovers all over the world.
 
