@@ -2,7 +2,7 @@
 
 - You can see the live website [here](https://hangman-wl.herokuapp.com/)..
 
-![Home page Quizz Master](images_readme/hangman_home_screen.png)
+![Home page Quizz Master](images_readme/multi_screen_home.png)
 
 
 # Aim of Game
