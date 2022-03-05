@@ -38,12 +38,12 @@ def start_screen():
         username = input('SO WHAT IS YOUR NAME ?\n')
 
         if not username.isalpha():
-            print(Fore.RED + 'PLEASE ENTER USERNAME,USERNAME MUSH HAVE CHARACTERS')
+            print(Fore.RED + 'INVALID,USERNAME MUSH HAVE CHARACTERS')
             continue
         else:
             typewriter(f"""WELCOME, {username.upper()} I HOPE YOU ARE READY...\n""")
             typewriter(f"""THE LAST, {username.upper()} THAT PLAYED..... \n""")
-            typewriter(f"""..... IS STILL HANGING AROUND ;)\n\n""")
+            typewriter("""..... IS STILL HANGING AROUND ;)\n\n""")
             break
 
 
@@ -51,13 +51,16 @@ def menu():
     """
     Function for hangmans main menu.
     """
+    clear()
+    print(Fore.YELLOW + '=============================================')
     print(Fore.CYAN + "HANGMAN MENU\n")
-    print("1. HANGMAN RULES")
+    print(Fore.GREEN + "1. HANGMAN RULES")
     print(Fore.GREEN + "2. START GAME")
-    print("3. EXIT \n")
+    print(Fore.GREEN + "3. EXIT GAME \n")
+    print(Fore.YELLOW + '=============================================')
 
     while True:
-        player_choice = input(Fore.CYAN + "PLEASE PICK 1.2 OR 3 FROM THE MENU ")
+        player_choice = input(Fore.CYAN + "PLEASE PICK 1.2.3 FROM THE MENU ")
 
         if player_choice == '1':
             hangman_rules()
