@@ -34,6 +34,7 @@ def start_screen():
     )
     typewriter("""
     THERE CAN BE ONLY ONE WINNER, YOU OR THE HANGMAN...\t\n
+    WILL IT BE YOU OR THE HANGMAN...\t\n
     """)
     while True:
         username = input('SO WHAT IS YOUR NAME ?\n')
@@ -82,7 +83,7 @@ def exit_game():
     """
     Exit game function
     """
-    print("THANKS FOR DROPPING IN-BYE FOR NOW")
+    print("BYE FOR NOW...")
     print("IF YOU CHANGE YOUR MIND")
     print("CLICK THE RUN PROGRAM BOX TOP LEFT-TO START OVER")
     sys.exit()
