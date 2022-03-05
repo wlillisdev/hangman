@@ -4,32 +4,18 @@
 
 ![Home page Quizz Master](images_readme/hangman_home_screen.png)
 
-This website is designed for Quiz Master who is an online quizz company. Their aim is to become the market  leader in online quizzes and be a hub for quizz lovers all over the world.
+Home Screen of Hangman
 
 # Aim of Website
 
-The goal of the website is to create a trustworthy  online resource for users from all over the world to play quizzes & learn interesting  facts. Currently there are 4 main quiz topics.
-
-- ### Triva
-- ### Sport
-- ### Film
-- ### Music
-
-Each quiz has multiple choice answers giving the user a choice  of 3 answers for each question. With the aim of retaining the user on the website as long as possible.  
-The user is also given the answers after the quiz so they can see where they went wrong and build a level of trust between the user and the site.
-The site will be targeted toward  Adults initally, but with the aim to also build out children’s quizzes and more interactivity at a later stage.
+The goal of this App is to create an interactive word game that is both fun a challenging for the user.
 
 
 # User Stories
-- First Time Visitors Aims:
-  - As a first-time visitor, I want to quickly and easily understand what this website is about and what it can do for me.
+  - As a new user, I want to quickly and easily understand what to be able to navigate and understand the app quickly.
   - As a first-time visitor, I want to quickly learn what type of quizzes are on offer.
   - As a first-time visitor, I want to be able to easily navigate around the site to find the content I'm looking for.
 
-- Returning Visitors Aims:
-  - As a returning visitor, I would like to learn about different  quiz categories and try more quizzes.
-  - As a returning visitor, I want to interact with fact generator and interesting  facts map of the world. 
-  - As a returning visitor, I would like to find links to their social media channels and follow them.
 
 # Responsive 
 The website has been designed to operate on a number of screens and devices.The following tests were carried  out on [Am I Responsive](http://ami.responsivedesign.is/)
