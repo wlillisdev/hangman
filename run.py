@@ -109,7 +109,7 @@ def hangman_rules():
     # Give option to play or return to menu.
     print(Fore.CYAN + "WOULD YOU LIKE TO PLAY HAGMAN ? \n")
 
-    # Test for see for valid selection 
+    # Test for see for valid selection
     while True:
         game_on = input("PRESS 1 FOR YES OR 2 FOR NO: ")
 
