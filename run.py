@@ -43,7 +43,7 @@ def start_screen():
             continue
         else:
             typewriter(f"""WELCOME, {username.upper()} \n""")
-            typewriter(f""" I HOPE YOU ARE READY...\n""")
+            typewriter(""" I HOPE YOU ARE READY...\n""")
             typewriter(f"""THE LAST, {username.upper()} THAT PLAYED..... \n""")
             typewriter("""..... IS STILL HANGING AROUND ;)\n\n""")
             break
