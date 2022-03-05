@@ -8,7 +8,7 @@
 # Aim of Game
 
 The goal of this Game is to create an interactive word game that is both fun a challenging for the user.
-Hangman is a traditional word game that is great for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
+Hangman is a traditional word game that is normally played with pen & papper. I have put a modern twist on an old game by using python code. Which is a cool game that is great for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
 
 
 # User Stories
@@ -160,19 +160,15 @@ __Thank You Page__
 
 # Future Development
 
-- More Quiz Topics
-  - As the site grows so will the resource of quiz topics and questions.
+- Difficulty Levels
+  - There will be 3 difficulty levels, Easy, Medium & Hard, Hard will have 4 lives, Medium 7 lives and easy 10 lives. This will make the game more challenging
 
-  - As the site grows we will intergrate an API into the random fact generator to generate an  infinite amount of new facts.        
+  - Leader Board
+  The game will have a points system the user will earn point for correct guesses at the end of the game the users score will be uploaded in to a high scores screen.        
 
-- Children Quizzes 
-  - Children Quizzes section will be added at a later date, to broaden the reach of the website.
+- Word Themes 
+  - Currently all the words are just random words, it would be interesting if the user could select a theme and the words were directly related to that, for example movies
 
-- Subscription Section
-  - The site will initially  have a number of quizzes free for everyone. But there will be an option for users to sign up to a monthly subscription service where they get exclusive quizzes every month.
-
-- Other Games
-  - As the site evolves  so will the amount of games on the site, initially  it is just quizzes, but it eventually have Crosswords, Word Search & Cryptograms.  
 
 # Testing
 
