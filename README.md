@@ -97,13 +97,24 @@ __Main Game__
     ![Play Again menu](images_readme/play_again.png)
 
   
-__About Us & Quiz Category__
+__Error Handling Main Game__
 
-  - About Us section is a very brief description about Quiz Master to quickly give the user more information about the company.
-  - The Quizz Category section, quickly shows the four main quiz categories.Triva,Sport,Film,Music.
-  - Each Category will change color once hovered over, once clicked it will lead the user to the quiz page.
+  - If the user enters a guess that is not in the alphabet, an error warning will be returned to the user, invalid character
 
- ![About & Category](assets/readme/about-us-new.png)
+    ![invalid character](images_readme/invalid_input_main.png)
+
+  - if the user guesses the same character of a previous guess, they will be given a warning, and prompted for another guess. 
+
+    ![same guess](images_readme/invalid_input_main.png)
+
+- When the game is over the user must select either Y or N, if they don’t select this an error message will be displayed. 
+
+      ![restart check](images_readme/error_handling_restart.png)
+
+
+
+
+ 
 
 __Fact Generator__
 
