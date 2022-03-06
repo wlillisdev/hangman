@@ -93,6 +93,7 @@ def exit_game():
 def hangman_rules():
     """
     Outlines the rules of the game for the user
+    using typewrite effect
     """
     # Clear Terminal
     clear()
@@ -138,7 +139,7 @@ def get_word():
 def play_hangman():
     """
     Play a game of hangman.
-    Displays  lives and layout for player to play game.
+    Displays  lives and layout for user to play game.
     And guess the random word
     """
     # Clears Termainl

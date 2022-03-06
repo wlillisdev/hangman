@@ -1,6 +1,6 @@
 # HANGMAN
 
-- You can see the live Game [here](https://hangman-wl.herokuapp.com/)..
+- You play game here [here](https://hangman-wl.herokuapp.com/)..
 
 ![Hangman](images_readme/multi_screen_home.png)
 
@@ -18,7 +18,7 @@ The goal of this Game is to create an interactive word game that is both fun a c
   - If they guess incorrectly they will be notified of incorrect guess and they will lose a life. They will also get a visual representaiton of a hangman image been built for every life lost
   - Game is over when either all the users lives have gone or if the user correctly guesses the word
 
- ![Hangman](images_readme/multi_screen_home.png) 
+ ![Hangman](images_readme/how_to_play.png) 
 
 
 # User Stories
