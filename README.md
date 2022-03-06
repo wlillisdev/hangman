@@ -32,9 +32,20 @@ The goal of this Game is to create an interactive word game that is both fun a c
 # Features 
 
  __Start Screen__
- - The user is intially greeted by an bold hangman graphic in yellow. A typewrite effect was added to keep user engaged, it gives a brief message there can only be one winner, And asks the user for thier name. 
+ - The user is initially greeted by an bold hangman graphic in yellow. A typewrite effect was added to keep user engaged, it gives a brief message there can only be one winner, and asks the user for their name. 
   
-![Strat Screen Hangman](images_readme/start_screen.png)
+    ![Strat Screen Hangman](images_readme/start_screen.png)
+
+  - The user enters name and is greeted with some more text also in type writer effect, this was added to create engagement with the user and makes them feel part of the game it’s also a bit of fun.
+
+    ![Text After Input](images_readme/text_after_name-input.png)
+  
+    - The user must enter a valid name, error handling is put in place to ensure they do, they will be notified if not valid input.
+
+  ![Error Not Valid Input](images_readme/error_input_name.png)
+
+
+
 
 __Navigation Bar__
  

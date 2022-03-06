@@ -57,7 +57,7 @@ def menu():
     3 options,Hangman Rules,Play Game and Exit Game
     """
     # Clear Terminal
-    # clear()
+    clear()
     print(Fore.YELLOW + '=============================================\n')
     print(Fore.CYAN + "HANGMAN MENU\n")
     print(Fore.GREEN + "1. HANGMAN RULES")
