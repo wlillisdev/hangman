@@ -1,14 +1,13 @@
 # HANGMAN
 
-- You can see the live website [here](https://hangman-wl.herokuapp.com/)..
+- You can see the live Game [here](https://hangman-wl.herokuapp.com/)..
 
-![Home page Quizz Master](images_readme/multi_screen_home.png)
+![Hangman](images_readme/multi_screen_home.png)
 
 
 # Aim of Game
 
-The goal of this Game is to create an interactive word game that is both fun a challenging for the user.
-Hangman is a traditional word game that is normally played with pen & papper. I have put a modern twist on an old game by using python code. Which is a cool game that is great for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
+The goal of this Game is to create an interactive word game that is both fun a challenging for the user. It has will be programmed entirely in Python and run on Code Institute Huroko. I picked hangman as it a popular word game that i enjoyed playing as a child with just pen and paper. If you are not familiar with the game check it out here [find out more](https://en.wikipedia.org/wiki/Hangman_(game)) I have put a modern twist on an old game by using python code. Word games are loved all over the world by both kids and adults and have and have shown to have a number of great benefits for the user [find out more](https://www.wordunscramble.io/articles/benefits-of-playing-word-games) It is also a cool way for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
 
 
 # User Stories
