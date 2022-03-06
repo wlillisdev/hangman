@@ -32,7 +32,7 @@ The goal of this Game is to create an interactive word game that is both fun a c
 # Features 
 
  __Start Screen__
- - The user is initially greeted by an bold hangman graphic in yellow. A typewrite effect was added to keep user engaged, it gives a brief message there can only be one winner, and asks the user for their name. 
+ - The user is initially greeted by an bold hangman graphic in yellow.This Asci Art banner was created at [Asci banner](https://manytools.org/hacker-tools/ascii-banner/) A typewrite effect was added to keep user engaged, it gives a brief message there can only be one winner, and asks the user for their name. 
   
     ![Strat Screen Hangman](images_readme/start_screen.png)
 
@@ -48,32 +48,51 @@ The goal of this Game is to create an interactive word game that is both fun a c
 __Game Menu__
  
   - After the start up screen The terminal is cleared and the player is brought to the main menu of the game. The palyer has 3 options to chose from.1.Hangman Rules 2.Start Game 3.Exit Game
+
       ![Main Menu](images_readme/menu_hangman.png)
 
   - The Hangman Rules section outlines the rules of the game, this text is delivered in a type writer effect to amke it more engaging to the user.
+
      ![Hangman Rules](images_readme/hangman_rules.png)
 
   - The Exit Game option will allow the user to completely terminate the game
+
       ![Exit Game](images_readme/exit_game.png)
 
   - Error handling menu,The user will be notified of an invalid selection on the menu screen
+
       ![Error Handling Menu](images_readme/errors_handling_menu.png)
 
   - Error handling hangman rules.The user will be notified of an invalid selection on the hangman rules section
+
       ![Error Handling Menu](images_readme/error_handling_instructions.png)
 
 
+__Main Game__
 
+  - At game start screen,the user is greeted with a bright game interface. It displays the current users lives, What letters he has gussed,(current nothing diplayed as game has yet to start) What the Hidden word is _ _ _ _  that is randonly selected form a directory of over 400 words.
+  The screen also askes the user to guess a letter.I also included asci art in to the lives dictionary to diplay at the opening screen of the game saying Good Luck.
 
-__Landing Page__
+    ![Main Game Interface](images_readme/start_game.png)
 
-  - The landing page contains an eye-catching background image of a shelves of books that infers the theme of knowledge and quizzes.
-  - The text are you ready for  is animated  on page load and catches the users attention straight  away, it is bold and white and contrasts well with background image.
-  - It also has a call to action with a button i want to play,that jumps to the category section of the homepage.
+  - Each user guess is recorded in you have used these letters.Everythime they guess wrong thy lose a life and the hangman visual builds. The user also gets a message in red telling them that letter is not in the word.
 
- ![Landing](assets/readme/landing-page.png)
+    ![Disply Lives & Visual hangman](images_readme/how_to_play.png)
 
+  - When the user guesses a correct letter in the hidden word. the letter is revealed in current 
 
+    ![Show Letter in current word when correct](images_readme/guess_word.png)
+
+  - Clear termianl in between each move was also intergated to improve user experience
+
+  - If the user gets all the letters correct in the current word they win, And and message you win will appear.
+
+    ![User Win](images_readme/you_win.png)
+
+  - If the user loses all thier lives & the hangman visual will be completed the hangman wins, and the game over message is displayed.The hidden word will also be revaled.
+
+    ![Hangman Wins](images_readme/game_over.png)
+  
 __About Us & Quiz Category__
 
   - About Us section is a very brief description about Quiz Master to quickly give the user more information about the company.
