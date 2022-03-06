@@ -113,102 +113,18 @@ __Error Handling Main Game__
 
 
 
-
- 
-
-__Fact Generator__
-
-  - This is a fun app that will create a new random interesting  fact every time the user clicks on the button.
-  - This is aimed at grabbing a new users attention and helping to encourage  a user to click on a quiz after playing.
-  - The button has a hover effect and will change color once clicked.
-
- ![Fact Generator](assets/readme/new-fact-generator.png)
-
-
-__Footer__
-
-  - The footer is simple and clean design it is the same on all pages of the website.
-  - It contains 3 social media platforms as requested by Quizz Master they will also open in a new window to allow easy navigation for the user.
-  - The main aim of the footer is to increase engagement with visitors.With the goal of getting the user to subscribe to the channel in order to get updates on new quizzes. 
-
- ![Footer Bar](assets/readme/footer.png)
-
-- __Hoover__
-
-  - Each clickable element on the website changes color when hovered over with a mouse. This is to encourage users to click on buttons and links and increase engagement and user experience.
-  
-
-__Quizzes Page__
-
-  -  This page clearly lays out the main quiz topics. The user can easily navigate to the diffrent quizzes.
-  - Each specific quiz category has an eye catching image in relation to the different topics. Each topic has a button type icon in the centre of it that also has a hover effect to improve the users experience.
-  - At the bottom of the page there is an interactive google map. The map has various markers at locations all around the world.
-  - When the user clicks on the marker a info window appears and the users can view an interesting fact from this location.
-  - This is aimed at improving  the users engagement  on the site. As all quiz lovers enjoys interesting  facts and information this map will cater for this need and provide some fun for the user as they take a break between quizzes.
-  
-  - Quizzes Page
- ![Quizz Featuer](assets/readme/quizzes-featuers.png)
-
- - Quizzes Page Google Map Feature
- ![Map Quizzes Featuer](assets/readme/map-quizzes.png)
-
-  [View Quizzes Page Featuers](https://wlillisdev.github.io/quiz-master/quizzes.html)
-
-
-__Quiz Page__
-
-  -  The quiz page is the same format on all quizzes, 5 questions with a multiple choice of 3 answers per question.The user answer is easily and quickly recorder in a radio input.
-
-  - Quiz Page
- ![Quizz Featuer](assets/readme/quizz-page.png)
-
-  - The user has to answer all questions for the quiz to be successful. If they don't they will be given an alert saying you have missed a question.
-
-  - Alert warning
- ![Quizz Featuer](assets/readme/alert-quizz.png)
-
-  - At the end of the quiz the user presses get results  button, And a message tells them how many questions they have got correct.
-  - The results is also accompanied with a GIF image, there a 3 different  images that relate to different  score ranges.
-  - GIF for All Correct
-  ![Quiz Results](assets/readme/quizz-full-marks.png)
-  - The answers to the questions are also revealed  once the user has submitted at the end of the quiz.  
-  
-  [View Quiz Page Featuers](https://wlillisdev.github.io/quiz-master/quizz-triva.html)
-
-
-
-__Contact Us Page__
-
- [View Contact Us Featuers](https://wlillisdev.github.io/quiz-master/contact-us.html)
-
-  - It has a simple but elegant contact us form layout. That captures enough information so Quiz Master can follow up on the lead. And allows a user’s to quickly fill out the form with minimal information.
-  - It also has a video background of question marks. It continues the animation theme and quesion mark logo from the home page it is fun and interesting.
- 
- ![Contact Us Form](assets/readme/contact-us.png)
-
-__Thank You Page__
-  - When the user successfully submits the contact us form, they will be brought to a thank you page. Which will also encourage the user to check out our social channels.
-  ![Thank You Page](assets/readme/thank-you.png)
-
 # Design
- - Theme
-   - The Theme of the website was to build a bright and engaging Quiz website with a blend of both quizzes and fun. 
-   - Fonts were imported from google fonts, Boogaloo was used for the logo and nav menu, Libre Franklin for hompage hero text, Montserrat for headings, and Roboto for body text.These were picked as they were crisp and complimented each other and the theme of the site.
+ - Ascii Art
+   - Ascii Banners were used both in the main game heading, And in the main game interface, it add a nice dimension to the the overall design as using python only can make a boring interface for the user
+
+   ![Ascii Banner](images_readme/hangman_logo.png)
 
  - Color Palette
-   - The color palette is made up of four main colors which creates a good contrast and helps support the overall theme.
+   - I imported colorama to python to add color to the design of the game, it helps improve user eperience and overall game play. Red was used to highlight any errors,invlaid inputs & lose banner.Green was used for correct guesses and win banner.
+   - Yellow and Cyan colors were also used to improve the overall interface of the game design.
 
- ![Color Palette](assets/readme/color-pallet.png)
+ ![Color Palette](images_readme/color_pallet.png)
 
-- Imagery
-   - The images that were selected for the website were bold and bright images related to the Quiz Genre.
-
-- Wireframes
-   - To create the initial layout and wireframe I used Balsamiq. This helped fine tune the design and layout. It also helped in calculating the amount of content and images required.
-
-  - ![Homepage Wireframe Concept](assets/readme/home-wireframe.png)
-  - [Quizzes Page Wireframe Concept](assets/readme/quizzes-wireframe-new.png)
-  - [Quizz Page Wireframe Concept](assets/readme/quizz-wireframe.png)
    
 
 # Future Development
