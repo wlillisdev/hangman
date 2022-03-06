@@ -109,7 +109,7 @@ def hangman_rules():
     GOOD LUCK YOU WILL NEED IT\n
     \n""")
     # Give option to play or return to menu.
-    print(Fore.CYAN + "WOULD YOU LIKE TO PLAY HAGMAN ? \n")
+    print(Fore.CYAN + "WOULD YOU LIKE TO PLAY HANGMAN ? \n")
 
     # Test for see for valid selection
     while True:
