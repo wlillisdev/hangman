@@ -177,6 +177,7 @@ def play_hangman():
             # If guess is in the word it will remove from word_letters
             if user_letter in word_letters:
                 word_letters.remove(user_letter)
+                print(Fore.RED + 'you got it correct.'.upper())
             else:
                 # takes away a life if wrong
                 lives = lives - 1
