@@ -70,28 +70,31 @@ __Game Menu__
 
 __Main Game__
 
-  - At game start screen,the user is greeted with a bright game interface. It displays the current users lives, What letters he has gussed,(current nothing diplayed as game has yet to start) What the Hidden word is _ _ _ _  that is randonly selected form a directory of over 400 words.
-  The screen also askes the user to guess a letter.I also included asci art in to the lives dictionary to diplay at the opening screen of the game saying Good Luck.
+  - At game start screen, the user is greeted with a bright game interface. It displays the current users lives, What letters he has guessed, (current nothing displayed as game has yet to start) What the Hidden word is _ _ _ _  that is randomly selected form a directory of over 400 words.
+  The screen also asks the user to guess a letter. I also included asci art in to the lives dictionary to display at the opening screen of the game saying Good Luck.
 
     ![Main Game Interface](images_readme/start_game.png)
 
-  - Each user guess is recorded in you have used these letters.Everythime they guess wrong thy lose a life and the hangman visual builds. The user also gets a message in red telling them that letter is not in the word.
+  - Each user guess is recorded in you have used these letters. Every time they guess wrong thy lose a life and the hangman visual builds. The user also gets a message in red telling them that letter is not in the word.
 
-    ![Disply Lives & Visual hangman](images_readme/how_to_play.png)
+    ![Display Lives & Visual hangman](images_readme/how_to_play.png)
 
   - When the user guesses a correct letter in the hidden word. the letter is revealed in current 
 
     ![Show Letter in current word when correct](images_readme/guess_word.png)
 
-  - Clear termianl in between each move was also intergated to improve user experience
+  - Clear terminal in between each move was also integrated to improve user experience
 
-  - If the user gets all the letters correct in the current word they win, And and message you win will appear.
+  - If the user gets all the letters correct in the current word they win, And message you win will appear.
 
     ![User Win](images_readme/you_win.png)
 
-  - If the user loses all thier lives & the hangman visual will be completed the hangman wins, and the game over message is displayed.The hidden word will also be revaled.
+  - If the user loses all their lives & the hangman visual will be completed the hangman wins, and the game over message is displayed. The hidden word will also be revealed.
 
     ![Hangman Wins](images_readme/game_over.png)
+
+  - At the end of each game the user will be given an option to play again or not play again. If the user plays again the terminal is cleared for a new game and a new random word is picked. If the user decides not to play again, they will be brought back to the main menu.
+
   
 __About Us & Quiz Category__
 
