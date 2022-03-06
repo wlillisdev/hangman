@@ -40,20 +40,30 @@ The goal of this Game is to create an interactive word game that is both fun a c
 
     ![Text After Input](images_readme/text_after_name-input.png)
   
-    - The user must enter a valid name, error handling is put in place to ensure they do, they will be notified if not valid input.
+  - The user must enter a valid name, error handling is put in place to ensure they do, they will be notified if not valid input.
 
-  ![Error Not Valid Input](images_readme/error_input_name.png)
-
-
+    ![Error Not Valid Input](images_readme/error_input_name.png)
 
 
-__Navigation Bar__
+__Game Menu__
  
-  - The Navigation bar is located at the top of all  Pages. It is simple but clean design. It includes the logo, Home page, Quizzes and Contact Us page.
-  - It will allow a visitor to quickly and easily get around the site as each link logically leads to the next.
-  - The nav elements also change colour when hovered over and also has an active line under each link when clicked which adds to the user experience.  
+  - After the start up screen The terminal is cleared and the player is brought to the main menu of the game. The palyer has 3 options to chose from.1.Hangman Rules 2.Start Game 3.Exit Game
+      ![Main Menu](images_readme/menu_hangman.png)
 
- ![Navigation Bar](assets/readme/header-new.png)
+  - The Hangman Rules section outlines the rules of the game, this text is delivered in a type writer effect to amke it more engaging to the user.
+     ![Hangman Rules](images_readme/hangman_rules.png)
+
+  - The Exit Game option will allow the user to completely terminate the game
+      ![Exit Game](images_readme/exit_game.png)
+
+  - Error handling menu,The user will be notified of an invalid selection on the menu screen
+      ![Error Handling Menu](images_readme/errors_handling_menu.png)
+
+  - Error handling hangman rules.The user will be notified of an invalid selection on the hangman rules section
+      ![Error Handling Menu](images_readme/error_handling_instructions.png)
+
+
+
 
 __Landing Page__
 
