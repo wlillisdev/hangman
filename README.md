@@ -15,7 +15,7 @@ The goal of this Game is to create an interactive word game that is both fun a c
   - The word will be shown the the user  with _ _ _ _ _ to show user how many letters are in the word
   - The user will have 7 tries or lives to guess the hidden word.
   - After each guess the user will get feed back weather they have guessed correctly or incorrectly. If they have guessed correctly the the letter will be revaled in the hidden word A P _ _ E
-  - If they guess incorrectly they will be notified of incorrect guess and they will lose a life. They will also get a visual representaiton of a hangman image been built for every life lost
+  - If user guesses incorrectly they will be notified of incorrect guess and they will lose a life. They will also get a visual representaiton of a hangman image been built for every life lost
   - Game is over when either all the users lives have gone or if the user correctly guesses the word
 
  ![Game displaying,SecrteLives,Guesses,Words Guessed,Hangman Visual](images_readme/how_to_play.png) 
@@ -29,26 +29,12 @@ The goal of this Game is to create an interactive word game that is both fun a c
   - As a user, i want the game to be challenging.
 
 
-# Responsive 
-The website has been designed to operate on a number of screens and devices.The following tests were carried  out on [Am I Responsive](http://ami.responsivedesign.is/)
- - Homepage (displayed below)
-
-![Am I Responsive Test Homepage](assets/readme/new-reponsive-home.png)
-
- - Quizzes Page [Am I Responsive Test services Page ](assets/readme/services-page-responsive.png)
-
- - Quizz Page [Am I Responsive Test contact Us Page](assets/readme/quiz-page-responsive.png)
- 
- - Contact Us [Am I Responsive Test Thank You Page](assets/readme/contact-responsive.png)
-
 # Features 
 
- [View Homepage Featuers](https://wlillisdev.github.io/quiz-master/index.html)
-
-__Favicon__
- - As the company logo is a question mark i combined this with yellow branding to make an eye catching Favicon.
+ __Start Screen__
+ - The user is intially greeted by an bold hangman graphic in yellow. A typewrite effect was added to keep user engaged, it gives a brief message there can only be one winner, And asks the user for thier name. 
   
-![favicon](assets/readme/favicon-new.png)
+![Strat Screen Hangman](images_readme/start_screen.png)
 
 __Navigation Bar__
  
