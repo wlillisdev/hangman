@@ -10,6 +10,17 @@
 The goal of this Game is to create an interactive word game that is both fun a challenging for the user. It has will be programmed entirely in Python and run on Code Institute Huroko app. I picked hangman as it a popular word game that i enjoyed playing as a child with just pen and paper. If you are not familiar with the game check it out here [find out more](https://en.wikipedia.org/wiki/Hangman_(game)) I have put a modern twist on an old game by using python code. Word games are loved all over the world by both kids and adults and have and have shown to have a number of great benefits for the user [find out more](https://www.wordunscramble.io/articles/benefits-of-playing-word-games) It is also a cool way for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
 
 
+# How to Play
+  - The aim of the game is to guess the hidden word that is generated at random by the game
+  - The word will be shown the the user  with _ _ _ _ _ to show user how many letters are in the word
+  - The user will have 7 tries or lives to guess the hidden word.
+  - After each guess the user will get feed back weather they have guessed correctly or incorrectly. If they have guessed correctly the the letter will be revaled in the hidden word A P _ _ E
+  - If they guess incorrectly they will be notified of incorrect guess and they will lose a life. They will also get a visual representaiton of a hangman image been built for every life lost
+  - Game is over when either all the users lives have gone or if the user correctly guesses the word
+
+ ![Hangman](images_readme/multi_screen_home.png) 
+
+
 # User Stories
   - As a new user, I want to quickly and easily understand what to be able to navigate and understand the app quickly.
   - As a first-time visitor, I want to quickly learn what type of quizzes are on offer.
