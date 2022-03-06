@@ -79,7 +79,7 @@ __Main Game__
 
     ![Display Lives & Visual hangman](images_readme/how_to_play.png)
 
-  - When the user guesses a correct letter in the hidden word. the letter is revealed in current 
+  - When the user guesses a correct letter in the hidden word. the letter is revealed in current word 
 
     ![Show Letter in current word when correct](images_readme/guess_word.png)
 
