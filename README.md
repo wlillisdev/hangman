@@ -79,9 +79,9 @@ __Main Game__
 
     ![Display Lives & Visual hangman](images_readme/how_to_play.png)
 
-  - When the user guesses a correct letter in the hidden word. the letter is revealed in current word 
+  - When the user guesses a correct letter in the hidden word. the letter is revealed in current word, And get notfied of correct guess in terminal also in green text.
 
-    ![Show Letter in current word when correct](images_readme/guess_word.png)
+    ![Show Letter in current word when correct](images_readme/correct_guess.png)
 
   - Clear terminal in between each move was also integrated to improve user experience
 
@@ -94,6 +94,7 @@ __Main Game__
     ![Hangman Wins](images_readme/game_over.png)
 
   - At the end of each game the user will be given an option to play again or not play again. If the user plays again the terminal is cleared for a new game and a new random word is picked. If the user decides not to play again, they will be brought back to the main menu.
+    ![Play Again menu](images_readme/play_again.png)
 
   
 __About Us & Quiz Category__

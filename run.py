@@ -224,7 +224,7 @@ def restart_game():
             menu()
 
         else:
-            print(f" YOU MUST TYPE EITHER Y or N. YOU TYPED {(restart)}")
+            print(Fore.RED + f"TYPE EITHER Y or N. YOU TYPED {(restart)}")
 
 
 # Banner appears at end of game
