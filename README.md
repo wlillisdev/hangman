@@ -7,7 +7,7 @@
 
 # Aim of Game
 
-The goal of this Game is to create an interactive word game that is both fun a challenging for the user. It has will be programmed entirely in Python and run on Code Institute Huroko app. I picked hangman as it a popular word game that i enjoyed playing as a child with just pen and paper. If you are not familiar with the game check it out here [find out more](https://en.wikipedia.org/wiki/Hangman_(game)) I have put a modern twist on an old game by using python code. Word games are loved all over the world by both kids and adults and have and have shown to have a number of great benefits for the user [find out more](https://www.wordunscramble.io/articles/benefits-of-playing-word-games) It is also a cool way for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
+The goal of this Game is to create an interactive word game that is both fun a challenging for the user. It will be programmed entirely in Python and run on Code Institute Huroko app. I picked hangman as it a popular word game that i enjoyed playing as a child with just a pen and paper. If you are not familiar with the game check it out here [find out more](https://en.wikipedia.org/wiki/Hangman_(game)) I have put a modern twist on an old game by using python code. Word games are loved all over the world by both kids and adults and have and have shown to have a number of great benefits for the user [find out more](https://www.wordunscramble.io/articles/benefits-of-playing-word-games) It is also a cool way for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
 
 
 # How to Play
@@ -117,13 +117,18 @@ __Error Handling Main Game__
  - Ascii Art
    - Ascii Banners were used both in the main game heading, And in the main game interface, it add a nice dimension to the the overall design as using python only can make a boring interface for the user
 
-   ![Ascii Banner](images_readme/hangman_logo.png)
+    ![Ascii Banner](images_readme/hangman_logo.png)
 
  - Color Palette
    - I imported colorama to python to add color to the design of the game, it helps improve user eperience and overall game play. Red was used to highlight any errors,invlaid inputs & lose banner.Green was used for correct guesses and win banner.
+
    - Yellow and Cyan colors were also used to improve the overall interface of the game design.
 
- ![Color Palette](images_readme/color_pallet.png)
+    ![Color Palette](images_readme/color_pallet.png)
+
+   - Hangman Visuals pictures also help animate the game and create an element of suspense
+
+    ![Hangman Visual](images_readme/hangman_visual.png)
 
    
 
