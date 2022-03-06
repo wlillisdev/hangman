@@ -18,13 +18,15 @@ The goal of this Game is to create an interactive word game that is both fun a c
   - If they guess incorrectly they will be notified of incorrect guess and they will lose a life. They will also get a visual representaiton of a hangman image been built for every life lost
   - Game is over when either all the users lives have gone or if the user correctly guesses the word
 
- ![Hangman](images_readme/how_to_play.png) 
+ ![Game displaying,SecrteLives,Guesses,Words Guessed,Hangman Visual](images_readme/how_to_play.png) 
 
 
 # User Stories
-  - As a new user, I want to quickly and easily understand what to be able to navigate and understand the app quickly.
-  - As a first-time visitor, I want to quickly learn what type of quizzes are on offer.
-  - As a first-time visitor, I want to be able to easily navigate around the site to find the content I'm looking for.
+  The target audience for this game is both adults and kids as both demopgrhics enjoy word games, I tried to strike a balance between fun and engaging and also challenging to the user.
+  - As a  user, I want to quickly and easily navigate the game.
+  - As a user, I want to know the rules of the game.
+  - As a user, i want the game to be fun and easy to play.
+  - As a user, i want the game to be challenging.
 
 
 # Responsive 
