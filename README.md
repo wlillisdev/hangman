@@ -210,10 +210,11 @@ __Error Handling Main Game__
 
 # Bugs
 
-  - After running the site through HTML checker, a number of small bugs were identified. Each error was identified and an appropriate solution applied, i went through all pages and fixed any errors. It was good lesson and practice in finding problems with code and fixing them.
-  - After Running all the pages through lighthouse, it identified issues with a number of images due to size. Lighthouse suggested to change some larger images which was done.
-  - Initially  i had a mouse over event listener  on google maps markers but this was no use for mobile which i realised  when testing, so i changed it to onclick event.
-  - I had eval in my validate quiz function, jshint gave this as a warning and a potential security risk so i removed it.
+  - When deploying the game on Huroko at first it wouldn’t deploy because of an issue colorama. After some research i added colorama to the requirements.txt file and it deployed ok.
+  - I used the type writer effect form youtube, it was defined originally as def typewriter(string) but as i already had imported string for the main game it was causing issues, so i redefined the function as def typewriter(line).
+  - When testing the game it was noted that it was possbile for the user to not fill out the user name input, i inserted isalpha() to ensure that it only accecpted characters from the alphabet. 
+
+
   
 
   # Unfixed Bugs
