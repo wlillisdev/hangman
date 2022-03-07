@@ -152,7 +152,6 @@ __Error Handling Main Game__
   - Before the game was sent for feedback, i tested everything on the Heroku terminal multiple times.
   - The game was further tested using feedback from mentor, family and friends who played it and gave feedback on any issues they had.
 
-
 # Bugs
 
   - When deploying the game on Huroko at first it wouldn’t deploy because of an issue colorama. After some research i added colorama to the requirements.txt file and it deployed ok.
@@ -198,9 +197,7 @@ The site was created using Visual Studio Code and GitHub, and deployed to GitHub
 
 - ## Languages
 
-  - [HTML5](https://en.wikipedia.org/wiki/HTML5)
-  - [CSS](https://en.wikipedia.org/wiki/CSS)
-  - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+  - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 - ## Content
    - The code for the contact us form was taken from the love running tutorial from [Code Institute](https://codeinstitute.net/ie/) and modified.
