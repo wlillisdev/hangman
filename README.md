@@ -88,6 +88,7 @@ __Main Game__
     ![Hangman Wins](images_readme/game_over.png)
 
   - At the end of each game the user will be given an option to play again or not play again. If the user plays again the terminal is cleared for a new game and a new random word is picked. If the user decides not to play again, they will be brought back to the main menu.
+
     ![Play Again menu](images_readme/play_again.png)
   
 __Error Handling Main Game__
@@ -100,9 +101,9 @@ __Error Handling Main Game__
 
     ![same guess](images_readme/invalid_input_main.png)
 
-- When the game is over the user must select either Y or N, if they don’t select this an error message will be displayed. 
+  - When the game is over the user must select either Y or N, if they don’t select this an error message will be displayed. 
 
-      ![restart check](images_readme/error_handling_restart.png)
+      ![restart check](images_readme/restart_error.png)
 
 # Design
  - Ascii Art
@@ -212,9 +213,13 @@ The site was created using Visual Studio Code and GitHub, and deployed to GitHub
 
     
 
--  ## Images
-   - All images were taken from [Pexels](https://www.pexels.com/)
-
+-  ## Python Libraries
+  - random
+    - The random library was imported to generate a random word from the word.py file, each new game has a diffrent randon word.
+  - os
+    - The os library was imported to create a function to use the os.system to clear the terminal screen.
+  - sys
+    - The sys library was imported to create a function that allows the user to exit the game. 
   
  -  ## Resources
     - [Stack Overflow](https://stackoverflow.com/)
