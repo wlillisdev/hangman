@@ -4,11 +4,9 @@
 
 ![Hangman](images_readme/multi_screen_home.png)
 
-
 # Aim of Game
 
 The goal of this Game is to create an interactive word game that is both fun a challenging for the user. It will be programmed entirely in Python and run on Code Institute Huroko app. I picked hangman as it a popular word game that i enjoyed playing as a child with just a pen and paper. If you are not familiar with the game check it out here [find out more](https://en.wikipedia.org/wiki/Hangman_(game)) I have put a modern twist on an old game by using python code. Word games are loved all over the world by both kids and adults and have and have shown to have a number of great benefits for the user [find out more](https://www.wordunscramble.io/articles/benefits-of-playing-word-games) It is also a cool way for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
-
 
 # How to Play
   - The aim of the game is to guess the hidden word that is generated at random by the game
@@ -20,14 +18,12 @@ The goal of this Game is to create an interactive word game that is both fun a c
 
  ![Game displaying,SecrteLives,Guesses,Words Guessed,Hangman Visual](images_readme/how_to_play.png) 
 
-
 # User Stories
   The target audience for this game is both adults and kids as both demopgrhics enjoy word games, I tried to strike a balance between fun and engaging and also challenging to the user.
   - As a  user, I want to quickly and easily navigate the game.
   - As a user, I want to know the rules of the game.
   - As a user, i want the game to be fun and easy to play.
   - As a user, i want the game to be challenging.
-
 
 # Features 
 
@@ -43,7 +39,6 @@ The goal of this Game is to create an interactive word game that is both fun a c
   - The user must enter a valid name, error handling is put in place to ensure they do, they will be notified if not valid input.
 
     ![Error Not Valid Input](images_readme/error_input_name.png)
-
 
 __Game Menu__
  
@@ -66,7 +61,6 @@ __Game Menu__
   - Error handling hangman rules.The user will be notified of an invalid selection on the hangman rules section
 
       ![Error Handling Menu](images_readme/error_handling_instructions.png)
-
 
 __Main Game__
 
@@ -95,7 +89,6 @@ __Main Game__
 
   - At the end of each game the user will be given an option to play again or not play again. If the user plays again the terminal is cleared for a new game and a new random word is picked. If the user decides not to play again, they will be brought back to the main menu.
     ![Play Again menu](images_readme/play_again.png)
-
   
 __Error Handling Main Game__
 
@@ -110,8 +103,6 @@ __Error Handling Main Game__
 - When the game is over the user must select either Y or N, if they don’t select this an error message will be displayed. 
 
       ![restart check](images_readme/error_handling_restart.png)
-
-
 
 # Design
  - Ascii Art
@@ -130,8 +121,6 @@ __Error Handling Main Game__
 
     ![Hangman Visual](images_readme/hangman_visual.png)
 
-   
-
 # Future Development
 
 - Difficulty Levels
@@ -142,7 +131,6 @@ __Error Handling Main Game__
 
 - Word Themes 
   - Currently all the words are just random words, it would be interesting if the user could select a theme and the words were directly related to that, for example movies
-
 
 # Testing
 
@@ -155,58 +143,14 @@ __Error Handling Main Game__
 
   - Pep 8 Pass Test
 
-    - [Erros From Validator Hompage](images_readme/pep8_pass_hangman.png)
+    - ![Erros From Validator Hompage](images_readme/pep8_pass_hangman.png)
    
-
- ### All Pages are now error free see links below:
-
- ![Home Page](assets/readme/homepage-pass-validator.png)
-   - [Homepage](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwlillisdev.github.io%2Fquiz-master%2Findex.html)
-   - [Quizzes Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwlillisdev.github.io%2Fquiz-master%2Fquizzes.html)
-   - [Triva Quizz](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwlillisdev.github.io%2Fquiz-master%2Fquizz-triva.html) Error because image is hidden until event happens
-   - [Sport Quizz](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwlillisdev.github.io%2Fquiz-master%2Fsport-quizz.html) Error because image is hidden until event happens
-   - [Film Quizz](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwlillisdev.github.io%2Fquiz-master%2Ffilm-quizz.html) Error because image is hidden until event happens
-   - [Film Quizz](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwlillisdev.github.io%2Fquiz-master%2Fmusic-quizz.html) Error because image is hidden until event happens
-   - [Contact Us Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwlillisdev.github.io%2Fquiz-master%2Fcontact-us.html)
-   - [Thank You Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwlillisdev.github.io%2Fquiz-master%2Fthank-you.html)
-
-## CSS Validator
-  - The [W3C](https://validator.w3.org/) was used to validate the **CSS** code
-  - The website passed with no errors
-
-  ![CSS Pass](assets/readme/css-pass-validator.png)
-
-  ### See links below for Results:
-
-   - [CSS Test Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwlillisdev.github.io%2Fquiz-master%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-
- 
-## Lighthouse
- - Lighthouse testing was carried out in Developer Tools in Chrome. Initially it gave a number of improvements and flagged up a number of images that needed to be reduced in size. Which was done.
-
- - The results were also skewed as the chrome extensions on my testing device was affecting the lighthouse results. The tests of all pages were redone in a incognito window and performance score increased.
-
- ![Hompage](assets/readme/lighthouse-homepage-crop.png)
- - [Quizzes Page lighthouse results](assets/readme/quizzes-pages-lighthouse.png) results are slightly down mainly due to the integration  of google maps api.
- - [Contact Us lighthoust results](assets/readme/contact-lighthouse-crop.png)
-
- ## JavaScript
- - The [JShint](https://jshint.com/) was used to validate the **JavaScrip** code
- - The results initally highlighted a few warnings.
-     - [Erros From JShint](assets/readme/jshint-error.png)
-     
- - Each item was addressed, The validation loop for the quizz was edited to remove eval as Jshint highlighted it could be harmful for security issues. And stack overflow suggested adding / /*jshint esversion: 6 */ to the notes this prevented this error.
-
- ![JShint Scan Pass](assets/readme/jshint-scan-pass.png)
- 
 ## Manual Testing
-  - All the site links were manually tested to see if they all worked ok and linked to the correct locations.
-  - The form was checked that name and email were required, that the radio buttons functioned and that the submit button worked.
-  - The site was further tested using feedback from mentor,family and friends who checked it on different  devices they had.
-  - All of the page's features were tested on Google Chrome, Microsoft Edge, Mozilla Firefox, Safari, and Opera .
-  - Google Chrome's Developer Tool was used to inspect page elements during the build and helped identify  and debug issues within the HTML and CSS.
-  - The README.md was checked before final submission and links verified.
-
+  - Continuous testing was carried out in git pod terminal and on the Heroku terminal during the game development. Methods such as print() was used as the code was been developed I used this to check for errors during the build.
+  - I Manually tested user inputs by purposefully inputting incorrect data to confirm error messages were working properly. I have previously outlined the error handling inputs in the features section.
+  - Errors or warnings were fixed as they appeared such as indentation errors, lines too long or extra space issues.
+  - Before the game was sent for feedback, i tested everything on the Heroku terminal multiple times.
+  - The game was further tested using feedback from mentor, family and friends who played it and gave feedback on any issues they had.
 
 
 # Bugs
@@ -218,7 +162,7 @@ __Error Handling Main Game__
 
 
   # Unfixed Bugs
-  - I am aware there is pep 8 errors in the hangman _lives files, This is a result of ascii banner inserted, it is giving a trailing whitespace warning, i discussed this with my mentor and tutor support, there was no straight forward fix, it has no effect on the game performance, and i chose to leave it is as i thought it was good feature for user experience.
+  - I am aware there is pep 8 errors in the hangman _lives files, this is a result of ascii banner inserted, it is giving a trailing whitespace warning, I discussed this with my mentor and tutor support, there was no straight forward fix, it has no effect on the game performance, and I chose to leave it is as I thought it was good feature for user experience.
 
 # Deployment
 
