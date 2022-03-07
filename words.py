@@ -1,5 +1,5 @@
 """
-List of words.
+List of words. Words were taken from Kite hangman tutorial
 """
 
 words = [

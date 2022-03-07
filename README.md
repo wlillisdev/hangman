@@ -211,16 +211,13 @@ __Error Handling Main Game__
 # Bugs
 
   - When deploying the game on Huroko at first it wouldn’t deploy because of an issue colorama. After some research i added colorama to the requirements.txt file and it deployed ok.
-  - I used the type writer effect form youtube, it was defined originally as def typewriter(string) but as i already had imported string for the main game it was causing issues, so i redefined the function as def typewriter(line).
-  - When testing the game it was noted that it was possbile for the user to not fill out the user name input, i inserted isalpha() to ensure that it only accecpted characters from the alphabet. 
+  - I used the type writer effect form YouTube tutorial, it was defined originally as def typewriter(string) but as i already had imported string for the main game it was causing issues, so i redefined the function as def typewriter(line).
+  - When testing the game it was noted that it was possible for the user to not fill out the user name input, i inserted isalpha() to ensure that it only accepted characters from the alphabet.
+  - When playing the game I noticed that every guess and hangman visual was appearing in the terminal and if you restarted the game the terminal became very busy and clutterd. I research that using a clear os.system function would get rid of the issue and make a cleaner and more user friendly interface by clearing each screen on the terminal after each guess. I used this function throughout the build once it was defined to make a cleaner and more user friendly game.
 
-
-  
 
   # Unfixed Bugs
-  - I am aware there is a console.log Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.From what i have researched this is a issue between Github and Google and has no effect on the sites performance.
-  - I am aware the website has a lot of large rich images and although images were cropped and compressed it could lead to reduced speed until cached. I have experimented with next gen image formats but currently  they lack browser compatibility  so i just went with png compressed and cropped format for this site.
-
+  - I am aware there is pep 8 errors in the hangman _lives files, This is a result of ascii banner inserted, it is giving a trailing whitespace warning, i discussed this with my mentor and tutor support, there was no straight forward fix, it has no effect on the game performance, and i chose to leave it is as i thought it was good feature for user experience.
 
 # Deployment
 
