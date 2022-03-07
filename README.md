@@ -148,13 +148,14 @@ __Error Handling Main Game__
 
 ### Validator Testing 
 
- - HTML Validator
-   - [W3C](https://validator.w3.org/) site was used to validate the **HTML** code.
-   - A number of small errors were initially flagged up. Some duplicate tags were removed and I also had to rename a number of images. I also misplaced a link tag in the homepage, as I copied this page structure for the rest of the site i had to fix it on all of these pages also
-     - [Erros From Validator Hompage](assets/readme/html-home-error.png)
-     - [Erros From Validator Quizzes](assets/readme/error-validator-quizzes.png)
-     - [Erros From Validator Triva Quiz](assets/readme/validaor-error-triva-quiz.png)
+ - Pep 8 Testing
+   - [pep8 online](http://pep8online.com/)  was used for validating the python files. 
+   - Initally there was a number of errors , all errors were fixed
+     - [Erros From Validator Hompage](images_readme/pep8.png)
 
+  - Pep 8 Pass Test
+
+    - [Erros From Validator Hompage](images_readme/pep8_pass_hangman.png)
    
 
  ### All Pages are now error free see links below:
