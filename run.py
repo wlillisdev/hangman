@@ -158,16 +158,16 @@ def play_hangman():
     lives = 7
     # creat a loop to iterate through input until all the letters guessed
     while len(word_letters) > 0 and lives > 0:
-        print(Fore.YELLOW + '=============================================')
+        print(Fore.YELLOW + '==========================================')
         print('You have'.upper(), lives, 'lives left'.upper())
         # letters that have been used
         print('You have used these letters: '.upper(), ' '.join(used_letters))
-        print(Fore.YELLOW + '=============================================')
+        print(Fore.YELLOW + '==========================================')
         # Tells the user what the current word with dashes (ie S - - P)
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
         print(lives_visual_dict[lives])
-        print(Fore.YELLOW + '=============================================')
+        print(Fore.YELLOW + '==========================================')
         print(Fore.GREEN + 'Current word: '.upper(), ' '.join(word_list))
 
         # Ask the users for a letter guess
@@ -204,7 +204,7 @@ def play_hangman():
         print(Fore.YELLOW + '=============================================')
         restart_game()
     else:
-        print(Fore.YELLOW + '=============================================')
+        print(Fore.YELLOW + '==============================================')
         print('You are clever you guessed the word'.upper(), Fore.CYAN + word,)
         user_win()
         print(Fore.YELLOW + '=============================================')
