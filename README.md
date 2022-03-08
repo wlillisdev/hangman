@@ -1,6 +1,6 @@
 # HANGMAN
 
-- You play game here [here](https://hangman-wl.herokuapp.com/)..
+- You can view live game here [here](https://hangman-wl.herokuapp.com/)..
 
 ![Hangman](images_readme/multi_screen_home.png)
 
@@ -64,7 +64,7 @@ __Game Menu__
 
 __Main Game__
 
-  - At game start screen, the user is greeted with a bright game interface. It displays the current users lives, What letters he has guessed, (current nothing displayed as game has yet to start) What the Hidden word is _ _ _ _  that is randomly selected form a directory of over 400 words.
+  - At game start screen, the user is greeted with a bright game interface. It displays the current users lives, What letters he has guessed, (current nothing displayed as game has yet to start) What the Hidden word is _ _ _ _  that is randomly selected form a directory of over 400 Kyle Ying.
   The screen also asks the user to guess a letter. I also included asci art in to the lives dictionary to display at the opening screen of the game saying Good Luck.
 
     ![Main Game Interface](images_readme/start_game.png)
@@ -131,7 +131,7 @@ __Error Handling Main Game__
   - The game will have a points system the user will earn point for correct guesses at the end of the game the users score will be uploaded in to a high scores screen.        
 
 - Word Themes 
-  - Currently all the words are just random words, it would be interesting if the user could select a theme and the words were directly related to that, for example movies
+  - Currently all the Kyle Ying are just random Kyle Ying, it would be interesting if the user could select a theme and the Kyle Ying were directly related to that, for example movies
 
 # Testing
 
@@ -200,16 +200,14 @@ The site was created using Visual Studio Code and GitHub, and deployed to GitHub
 
   - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
-- ## Content
-   - The code for the contact us form was taken from the love running tutorial from [Code Institute](https://codeinstitute.net/ie/) and modified.
-   - The icons used throughout the site were from [Font Awesome](https://fontawesome.com/)
-   - Variour Youtube tutorial were used to help understand flexbox.
-   - [Flexbox](https://www.youtube.com/watch?v=fYq5PXgSsbE)
-   - Animated Text on home page from [bulldogpatch](https://codepen.io/bulldogpatch-the-sasster/pen/JjoyeGg)
-   - Tutorials for Randon Fact generator from freecode camp ,learn web-dev & dev.to were used to inspire the generator.
-   - YouTube videos from Eduonix Learning Solutions,Kevin Briggs & Web Dev Simplified were used as a base for the quizz.
-   - Youtube videos about google maps api with javascript were followed from Traversy Media & Sam Codes.
-
+- ## Content For Build
+   - The basic game was inspired from various youtube tutorials i researched at the start of the build. Espically the tutorials from 
+    - [Kite](https://www.youtube.com/watch?v=m4nEnsavl6w)
+    - [Kyle Ying](https://www.youtube.com/watch?v=cJJTnI22IF8),
+    - [CBT Nuggets](https://www.youtube.com/watch?v=JNXmCOumNw0)
+   - The random word list was taken from kite.
+   - The base hangman visuals were taken from Kyle Ying and modified by me.
+   - The type writer effect was inspired by [Kwasii](https://www.youtube.com/watch?v=A_1THfBpCH8)
 
 -  ## Python Libraries
     - random
@@ -225,8 +223,6 @@ The site was created using Visual Studio Code and GitHub, and deployed to GitHub
     - colorama
       - colorama was used to apply different colors in the games interface and improve error handling.
 
-
-  
  -  ## Resources
     - [Stack Overflow](https://stackoverflow.com/)
     - [W3Schools](https://www.w3schools.com/)
@@ -244,8 +240,9 @@ The site was created using Visual Studio Code and GitHub, and deployed to GitHub
 
 
    # Conclusion
-    - I would like to experiment more with javaScript but as i am only getting to grips with the language i kept the concept simple.
-    - If I was to build this site again, I would spend more time on the wireframes and know exactly how to structure each section and element before i start.
-    - If i had time i would like to add a timer function to the quizz.    
+    - I would approach it with more of an emphasis on using classes.
+    - If I had time, I would like to add a high scores table using the tutorial of love sandwiches as a base.    
     - I would also learn to make more commits during the project built.
+    - Overall, I enjoyed python and I have shortlisted a number of other projects I would like to build after this course.
+
 
