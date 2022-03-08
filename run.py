@@ -172,6 +172,7 @@ def play_hangman():
 
         # Ask the users for a letter guess
         user_letter = input('Guess a letter:\n').upper()
+        print(Fore.YELLOW + '==========================================')
         clear()
         # If valid letter in alphabet add to user letter set
         if user_letter in alphabet - used_letters:
