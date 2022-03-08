@@ -172,7 +172,6 @@ def play_hangman():
 
         # Ask the users for a letter guess
         user_letter = input('Guess a letter:\n').upper()
-        print(Fore.YELLOW + '==========================================')
         clear()
         # If valid letter in alphabet add to user letter set
         if user_letter in alphabet - used_letters:
@@ -185,7 +184,7 @@ def play_hangman():
             else:
                 # takes away a life if wrong
                 lives = lives - 1
-                print(Fore.YELLOW + '=========================================')
+                print(Fore.YELLOW + '========================================')
                 print(Fore.RED + 'That Letter is not in the word.'.upper())
         # If user guessed character that has already been guessed give feedback
         elif user_letter in used_letters:
@@ -199,16 +198,16 @@ def play_hangman():
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(lives_visual_dict[lives])
-        print(Fore.YELLOW + '=============================================')
+        print(Fore.YELLOW + '=========================================')
         print(Fore.RED + 'hangman wins.The word was'.upper(), Fore.CYAN + word)
         user_lose()
-        print(Fore.YELLOW + '=============================================')
+        print(Fore.YELLOW + '=========================================')
         restart_game()
     else:
-        print(Fore.YELLOW + '==============================================')
+        print(Fore.YELLOW + '==========================================')
         print('You are clever you guessed the word'.upper(), Fore.CYAN + word,)
         user_win()
-        print(Fore.YELLOW + '=============================================')
+        print(Fore.YELLOW + '=========================================')
         restart_game()
 
 
