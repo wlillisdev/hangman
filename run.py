@@ -179,19 +179,20 @@ def play_hangman():
             # If guess is in the word it will remove from word_letters
             if user_letter in word_letters:
                 word_letters.remove(user_letter)
-                print(Fore.YELLOW + '=============================================')
+                print(Fore.YELLOW + '========================================')
                 print(Fore.GREEN + 'correct guess,well done'.upper())
             else:
                 # takes away a life if wrong
                 lives = lives - 1
-                print(Fore.YELLOW + '=============================================')
+                print(Fore.YELLOW + '========================================')
                 print(Fore.RED + 'That Letter is not in the word.'.upper())
         # If user guessed character that has already been guessed give feedback
         elif user_letter in used_letters:
+            print(Fore.YELLOW + '========================================')
             print(Fore.RED + 'Letter already used,please try again.'.upper())
         # If user guessed a character that is not a letter give user feedback
         else:
-            print(Fore.YELLOW + '=============================================')
+            print(Fore.YELLOW + '========================================')
             print(Fore.RED + 'Invalid character,Please usa a letter.'.upper())
 
     # gets here when len(word_letters) == 0 or when lives == 0
