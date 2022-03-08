@@ -171,11 +171,11 @@ The site was created using Visual Studio Code in Gitpod and GitHub, and deployed
 1. Remove un-wanted import features in run.py file
 2. Add to requirements.txt file:-
 * pip3 freeze > requirements.txt
-* Commit and push changes to Github:
+* Commit and push all changes to Github:
 
 Next I Created an new account in Heroku, And the follows steps were done
 
-1.	First we must create a new app to do this, click NEW in the top right corner and from the drop-down menu select Create a new APP.
+1.	First I must create a new app to do this, click NEW in the top right corner and from the drop-down menu select Create a new APP.
 3.	You must an app name, (hangman_wl)Heroku requires a unique name.
 4.	Select the region Europe.
 5.	Click on the Create App button.
