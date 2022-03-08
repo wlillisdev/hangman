@@ -211,15 +211,21 @@ The site was created using Visual Studio Code and GitHub, and deployed to GitHub
    - Youtube videos about google maps api with javascript were followed from Traversy Media & Sam Codes.
 
 
-    
-
 -  ## Python Libraries
-  - random
-    - The random library was imported to generate a random word from the word.py file, each new game has a diffrent randon word.
-  - os
-    - The os library was imported to create a function to use the os.system to clear the terminal screen.
-  - sys
-    - The sys library was imported to create a function that allows the user to exit the game. 
+    - random
+      - The random library was imported to generate a random word from the word.py file, each new game has a different random word.
+    - os
+      - The os library was imported to create a function to use the os.system to clear the terminal screen.
+    - sys
+      - The sys library was imported to create a function that allows the user to exit the game.
+    - time
+      - The time() function returns the number of seconds passed since epoch and was used to make the type write effect function.
+    - string
+      - The import string was used to define a constants set of ascii_letters in the alphabet which was used to define a set of characters that the user could only guess from in the main game function.
+    - colorama
+      - colorama was used to apply different colors in the games interface and improve error handling.
+
+
   
  -  ## Resources
     - [Stack Overflow](https://stackoverflow.com/)

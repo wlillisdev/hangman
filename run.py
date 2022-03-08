@@ -32,10 +32,12 @@ def start_screen():
             ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
         """
     )
+    # Intro message in typewriter effect
     typewriter("""
     THERE CAN BE ONLY ONE WINNER.....\t\n
     WILL IT BE YOU OR THE HANGMAN...\t\n
     """)
+    # Ask for user name
     while True:
         username = input('SO WHAT IS YOUR NAME ?\n')
 
