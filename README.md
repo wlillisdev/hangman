@@ -166,20 +166,38 @@ __Error Handling Main Game__
 
 # Deployment
 
-The site was created using Visual Studio Code and GitHub, and deployed to GitHub pages for testing using the below process:
+The site was created using Visual Studio Code in Gitpod and GitHub, and deployed to Heroku pages using the below process:
 
+1. Remove un-wanted import features in run.py file
+2. Add to requirements.txt file:-
+* pip3 freeze > requirements.txt
+* Commit and push changes to Github:
 
- - Clicked on my respository for [wlillisdev/quizz-master](https://github.com/wlillisdev/quiz-master).
- - Clicked settings tab and navigated down to "pages"
- - Selected "Main" in branch drop down box.
- - Clicked "save" which produced the live link which can be viewed [here](https://wlillisdev.github.io/quiz-master/).. 
+Next I Created an new account in Heroku, And the follows steps were done
+
+1.	First we must create a new app to do this, click NEW in the top right corner and from the drop-down menu select Create a new APP.
+3.	You must an app name, (hangman_wl)Heroku requires a unique name.
+4.	Select the region Europe.
+5.	Click on the Create App button.
+6.	The next page you will see is the project’s Deploy Tab.  Click on setting tab and scroll down to config vars
+7.	Scroll down to Config Vars where and enter the KEY: PORT and VALUE: 8000 I have no creds.json files to added for my build.
+8.  Press Add-button
+9.	Scroll down to Buildpacks and press the icon for Python, click Save Changes, then press the icon for Nodejs and save changes. Note These Buildpacks must be in the order of Python first and Nodejs second.
+10.	Scroll to the top of the page and now choose the Deploy tab
+11.	Select Github as the deployment method.
+12.	Confirm you want to connect to GitHub.
+13.	Search for the repository name and click the connect button.
+14.	Scroll to the bottom of the deploy page and select preferred deployment method.
+15. I clicked on Automatic Deployment so that my changes that I push to github are automatically updates in Heroku as i was still testing and building the game at this point
+16. Then in the Manual Deploy section, press Deploy Branch.
+17. After project has been deployed successfully I clicked the View-button to see the program run in the terminal and checked it it worked ok.
 
  ## Version Control
   - Git was used as the version control software. Commands such as git add ., git status, git commit and git push were used to add, save, stage and push the code to the GitHub repository.
 
 ## Cloning
 
-1. On [GitHub](www.github.com), navigate to the main page of the repository.  [Click Here for Reposititory Link](https://github.com/wlillisdev/quiz-master)
+1. On [GitHub](www.github.com), navigate to the main page of the repository.  [Click Here for Reposititory Link](https://github.com/wlillisdev/hangman)
 
 2. Above the list of files, click Code.
 
@@ -192,6 +210,15 @@ The site was created using Visual Studio Code and GitHub, and deployed to GitHub
 6. Press Enter to create the local clone.
 
 [git cloning steps with pictuers](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
+
+## Forking
+
+- Use the following steps if you want to fork this project.
+
+1. Open [GitHub](https://github.com/)
+2. Click on the project to be forked
+3. Find the Fork button at the top right of the page
+4. Once you click the button the fork will be in your repository
 
 
 # Credits
@@ -230,7 +257,7 @@ The site was created using Visual Studio Code and GitHub, and deployed to GitHub
     - Notes & Videos from course work from [Code Institute](https://codeinstitute.net/ie/)
 
 -  ## Tools
-   - [Balsamiq](https://balsamiq.com/) - Used to create wireframes
+   - [Ascii Art](https://manytools.org/hacker-tools/ascii-banner/) - Used to create Ascii Banners
    - [Google Fonts](https://fonts.google.com/) - Used to import fonts
    - [TinyPNG](https://tinypng.com/) - Used to compress images
 
@@ -238,11 +265,9 @@ The site was created using Visual Studio Code and GitHub, and deployed to GitHub
  - Special thanks to my mentor Miguel Martinez
  for his help and guidance in the development of my project. Special thanks to my tutor Kasia and our regular class meeting’s and members of the awesome slack community
 
-
    # Conclusion
-    - I would approach it with more of an emphasis on using classes.
     - If I had time, I would like to add a high scores table using the tutorial of love sandwiches as a base.    
     - I would also learn to make more commits during the project built.
-    - Overall, I enjoyed python and I have shortlisted a number of other projects I would like to build after this course.
+    - Overall, I enjoyed python and I have shortlisted a number of other projects i came across when in the research phase for the project that I would like to build after this course.
 
 
