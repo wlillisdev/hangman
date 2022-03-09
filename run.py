@@ -48,7 +48,7 @@ def start_screen():
             typewriter(f"""WELCOME, {username.upper()} \n""")
             typewriter(""" I HOPE YOU ARE READY...\n""")
             typewriter(f"""THE LAST, {username.upper()} THAT PLAYED..... \n""")
-            typewriter(""".. IS STILL HANGING AROUND..... ;)\n\n""")
+            typewriter(""".. IS STILL HANGING AROUND ;)....\n\n""")
             break
 
 
