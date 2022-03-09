@@ -27,7 +27,7 @@ The goal of this Game is to create an interactive word game that is both fun a c
 
 # Flow Chart
 
-![Hangman](images_readme/hangman_flowchart.png)
+![Hangman](images_readme/flowchart_hangman.png)
 
 
 
