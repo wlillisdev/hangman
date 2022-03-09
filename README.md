@@ -6,7 +6,7 @@
 
 # Aim of Game
 
-The goal of this Game is to create an interactive word game that is both fun a challenging for the user. It will be programmed entirely in Python and run on Code Institute Huroko app. I picked hangman as it a popular word game that i enjoyed playing as a child with just a pen and paper. If you are not familiar with the game check it out here [find out more](https://en.wikipedia.org/wiki/Hangman_(game)) I have put a modern twist on an old game by using python code. Word games are loved all over the world by both kids and adults and have and have shown to have a number of great benefits for the user [find out more](https://www.wordunscramble.io/articles/benefits-of-playing-word-games) It is also a cool way for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
+The goal of this Game is to create an interactive word game that is both fun a challenging for the user. It will be programmed entirely in Python and run on Code Institute Huroko app. I picked hangman as it a popular word game that i enjoyed playing as a child with just a pen and paper. If you are not familiar with the game check it out here [find out more](https://en.wikipedia.org/wiki/Hangman_(game)) I have put a modern twist on an old game by using python code. Word games are loved all over the world by both kids and adults and have shown to have a number of great benefits for the user [find out more](https://www.wordunscramble.io/articles/benefits-of-playing-word-games) It is also a cool way for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
 
 # How to Play
   - The aim of the game is to guess the hidden word that is generated at random by the game
@@ -26,9 +26,9 @@ The goal of this Game is to create an interactive word game that is both fun a c
   - As a user, i want the game to be challenging.
 
 # Flow Chart
+The flow chart was devloped to outline the logic of the game and help me programme it.I used [Luid Charts](https://bit.ly/3hXPmbj)
 
 ![Hangman](images_readme/flowchart_hangman.png)
-
 
 
 
@@ -265,8 +265,8 @@ Next I Created an new account in Heroku, And the follows steps were done
 
 -  ## Tools
    - [Ascii Art](https://manytools.org/hacker-tools/ascii-banner/) - Used to create Ascii Banners
-   - [Google Fonts](https://fonts.google.com/) - Used to import fonts
-   - [TinyPNG](https://tinypng.com/) - Used to compress images
+   - [Luid Charts](https://bit.ly/3hXPmbj) - used for flow chart
+   
 
 -  ## Acknowledgements
  - Special thanks to my mentor Miguel Martinez
