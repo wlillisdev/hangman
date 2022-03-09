@@ -6,48 +6,50 @@
 
 # Aim of Game
 
-The goal of this Game is to create an interactive word game that is both fun a challenging for the user. It will be programmed entirely in Python and run on Code Institute Huroko app. I picked hangman as it a popular word game that i enjoyed playing as a child with just a pen and paper. If you are not familiar with the game check it out here [find out more](https://en.wikipedia.org/wiki/Hangman_(game)) I have put a modern twist on an old game by using python code. Word games are loved all over the world by both kids and adults and have shown to have a number of great benefits for the user [find out more](https://www.wordunscramble.io/articles/benefits-of-playing-word-games) It is also a cool way for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
+The goal of this Game is to create an interactive word game that is both fun a challenging for the user. It will be programmed entirely in Python and run on Code Institute Huroko app. I picked hangman as it a popular word game that i enjoyed playing as a child with just a pen and paper. If you are not familiar with the game check it out here [find out more](https://en.wikipedia.org/wiki/Hangman_(game)) I have put a modern twist on an old game by using python code. Word games are loved all over the world by both kids and adults and have shown to have a number of great benefits for the player [find out more](https://www.wordunscramble.io/articles/benefits-of-playing-word-games) It is also a cool way for a developer or even a full stack student to relax and enjoy a few word games in-between dealing with coding challenges.
 
 # How to Play
+
   - The aim of the game is to guess the hidden word that is generated at random by the game
-  - The word will be shown the the user  with _ _ _ _ _ to show user how many letters are in the word
+  - The word will be shown to the user with _ _ _ _ _ to show the user how many letters are in the word
   - The user will have 7 tries or lives to guess the hidden word.
-  - After each guess the user will get feed back weather they have guessed correctly or incorrectly. If they have guessed correctly the the letter will be revaled in the hidden word A P _ _ E
-  - If user guesses incorrectly they will be notified of incorrect guess and they will lose a life. They will also get a visual representaiton of a hangman image been built for every life lost
-  - Game is over when either all the users lives have gone or if the user correctly guesses the word
+  - After each guess the user will get feedback weather they have guessed correctly or incorrectly. If they have guessed correctly a letter will be revealed in the hidden word A P _ _ E
+  - If user guesses incorrectly, they will be notified of incorrect guess and they will lose a life. They will also get a visual representation of a hangman image been built for every life lost
+  - Game is over when either all the user’s lives have gone or if the user correctly guesses all the letters in the hidden word.
 
  ![Game displaying,SecrteLives,Guesses,Words Guessed,Hangman Visual](images_readme/how_to_play.png) 
 
 # User Stories
-  The target audience for this game is both adults and kids as both demopgrhics enjoy word games, I tried to strike a balance between fun and engaging and also challenging to the user.
+
+  The target audience for this game is both adults and kids as both dimorphic enjoy word games, I tried to strike a balance between fun, engaging and also challenging for the user.
   - As a  user, I want to quickly and easily navigate the game.
   - As a user, I want to know the rules of the game.
   - As a user, i want the game to be fun and easy to play.
   - As a user, i want the game to be challenging.
 
 # Data Model
-The game uses a data base of random words and of hangman visuals that are imported into the python game.
+
+The game uses a data base of  words and  hangman visuals images that are imported into the python game.
 The game consists of 2 main classes the player and the hangman game.
  - The player class allows the user to input name, validate player input, let the player read hangman rules, let the player make a guess, validate guess, restart game, exit game.
-  - some of the methods used  menu(),exit_game(),hangman_rules(),restart_game()
+    - some of the methods used  menu(),exit_game(),hangman_rules(),restart_game()
  - The main hangman game class, generates a random word from the database of words, compares players guesses to the hidden random word, records users lives & generates a hangman visual based on incorrect guesses from the imported hangman visual file. 
-  - Some of the methods used  get_word(), play_hangman(),def clear()
-- Both classes also uses print to help the user play game and give feedback
+    - Some of the methods used  get_word(), play_hangman(),def clear()
+- Both classes also uses the print method to help the user play the game and give feedback
 
 
 # Flow Chart
-The flow chart was devloped to outline the logical flow of the game and help me programme it.I used [Luid Charts](https://bit.ly/3hXPmbj)
+
+The flow chart was devloped to outline the logical flow of the game and helped me to programme it.I used [Luid Charts](https://bit.ly/3hXPmbj)
 
 ![Hangman](images_readme/flowchart_hangman.png)
-
-
 
 # Features 
 
  __Start Screen__
- - The user is initially greeted by an bold hangman graphic in yellow.This Asci Art banner was created at [Asci banner](https://manytools.org/hacker-tools/ascii-banner/) A typewrite effect was added to keep user engaged, it gives a brief message there can only be one winner, and asks the user for their name. 
+ - The user is initially greeted by an bold hangman graphic in yellow. This Asci Art banner was created at [Asci banner](https://manytools.org/hacker-tools/ascii-banner/) A typewrite effect was added to keep user engaged, it gives a brief message there can only be one winner, and asks the user for their name. 
   
-    ![Strat Screen Hangman](images_readme/start_screen.png)
+    ![Start Screen Hangman](images_readme/start_screen.png)
 
   - The user enters name and is greeted with some more text also in type writer effect, this was added to create engagement with the user and makes them feel part of the game it’s also a bit of fun.
 
@@ -81,26 +83,26 @@ __Game Menu__
 
 __Main Game__
 
-  - At game start screen, the user is greeted with a bright game interface. It displays the current users lives, What letters he has guessed, (current nothing displayed as game has yet to start) What the Hidden word is _ _ _ _  that is randomly selected form a directory of over 400 Kyle Ying.
-  The screen also asks the user to guess a letter. I also included asci art in to the lives dictionary to display at the opening screen of the game saying Good Luck.
+  - At the game start screen, the user is greeted with a bright game interface. It displays the current users lives, What letters he has guessed, (current nothing displayed as game has yet to started) What the Hidden word is _ _ _ _  that is randomly selected form a directory of over 400 words.
+  The screen also asks the user to guess a letter. I also included ascii art in to the lives dictionary to display at the opening screen of the game saying Good Luck.
 
     ![Main Game Interface](images_readme/start_game.png)
 
-  - Each user guess is recorded in you have used these letters. Every time they guess wrong thy lose a life and the hangman visual builds. The user also gets a message in red telling them that letter is not in the word.
+  - Each user guess is recorded in you have used these letters section. Every time they guess wrong thy lose a life and the hangman visual builds. The user also gets a message in red telling them that letter is not in the word.
 
     ![Display Lives & Visual hangman](images_readme/how_to_play.png)
 
-  - When the user guesses a correct letter in the hidden word. the letter is revealed in current word, And get notfied of correct guess in terminal also in green text.
+  - When the user guesses a correct letter in the hidden word. the letter is revealed in current word, And the user get notfied of correct guess in the terminal also in green text.
 
     ![Show Letter in current word when correct](images_readme/correct_guess.png)
 
-  - Clear terminal in between each move was also integrated to improve user experience
+  - Clear terminal in between each move was also integrated to improve user experience and game play.
 
-  - If the user gets all the letters correct in the current word they win, And message you win will appear.
+  - If the user gets all the letters correct in the current word they win, And a message you win will appear.Along with the hidden word revealed.
 
     ![User Win](images_readme/you_win.png)
 
-  - If the user loses all their lives & the hangman visual will be completed the hangman wins, and the game over message is displayed. The hidden word will also be revealed.
+  - If the user loses all their lives & the hangman visual is completed the hangman wins,and the user loses.The game over message is displayed. The hidden word will also be revealed.
 
     ![Hangman Wins](images_readme/game_over.png)
 
@@ -123,13 +125,14 @@ __Error Handling Main Game__
       ![restart check](images_readme/restart_error.png)
 
 # Design
+
  - Ascii Art
    - Ascii Banners were used both in the main game heading, And in the main game interface, it adds a nice dimension to the the overall design as using python only can make a boring interface for the user
 
     ![Ascii Banner](images_readme/hangman_logo.png)
 
  - Color Palette
-   - I imported colorama to python to add color to the design of the game, it helps improve user eperience and overall game play. Red was used to highlight any errors,invlaid inputs & lose banner.Green was used for correct guesses and win banner. This can be seen in the featuers section.
+   - I imported colorama to python to add color to the design of the game, it helps improve user experience and overall game play. Red was used to highlight any errors, invalid inputs & Game Over banner. Green was used for correct guesses and win banner. This can be seen in the features section.
 
    - Yellow and Cyan colors were also used to improve the overall interface of the game design.
 
@@ -139,13 +142,14 @@ __Error Handling Main Game__
 
     ![Hangman Visual](images_readme/hangman_visual.png)
 
+
 # Future Development
 
 - Difficulty Levels
-  - There will be 3 difficulty levels, Easy, Medium & Hard, Hard will have 4 lives, Medium 7 lives and easy 10 lives. This will make the game more challenging
+  - There will be 3 difficulty levels, Easy, Medium & Hard, Hard will have 4 lives, Medium 7 lives and easy 10 lives. This will make the game more challenging.
 
 - Leader Board
-  - The game will have a points system the user will earn points for correct guesses at the end of the game the users name and score will be uploaded in to a high scores screen.        
+  - The game will have a points system the user will earn points for correct guesses at the end of the game the users name and score will be uploaded in to a high scores leader board.        
 
 - Word Themes 
   - Currently the word list is just random words. it would be interesting if the user could select a theme for example movies and all the words would be related to movies.
@@ -164,6 +168,7 @@ __Error Handling Main Game__
     - ![Pep 8 Pass](images_readme/pep8_pass_hangman.png)
    
 ## Manual Testing
+
   - Continuous testing was carried out in git pod terminal and on the Heroku terminal during the game development. Methods such as print() was used as the code was been developed I used this to check for errors during the build.
   - I Manually tested user inputs by purposefully inputting incorrect data to confirm error messages were working properly. I have previously outlined the error handling inputs in the features section.
   - Errors or warnings were fixed as they appeared such as indentation errors, lines too long or extra space issues.
@@ -173,18 +178,19 @@ __Error Handling Main Game__
 # Bugs
 
   - When deploying the game on Huroko at first it wouldn’t deploy because of an issue with colorama. After some research i added colorama to the requirements.txt file and it deployed ok.
-  - I used the type writer effect form YouTube tutorial, it was defined originally as def typewriter(string) but as i already had imported python libary string for the main game it was causing issues, so i redefined the function as def typewriter(line).
+  - I used the type writer effect form YouTube tutorial, it was defined originally as def typewriter(string) but as I already had imported python library string for the main game it was causing issues, so I redefined the function as def typewriter(line).
   - When testing the game it was noted that it was possible for the user to not fill out the user name input, i inserted isalpha() to ensure that it only accepted characters from the alphabet.
-  - When playing the game I noticed that every guess and hangman visual was appearing in the terminal and if you restarted the game the terminal became very busy and clutterd. I research that using a clear os.system function would get rid of the issue and make a cleaner and more user friendly interface by clearing each screen on the terminal after each guess. I used this function throughout the build once it was defined to make a cleaner and more user friendly game.
-
+  - When playing the game, I noticed that every guess and hangman visual was appearing in the terminal and if you restarted the game the terminal became very busy and cluttered. I research that using a clear os.system function would get rid of the issue and make a cleaner and more user friendly interface by clearing each screen on the terminal after each guess. I used this function throughout the build once it was defined to make a cleaner and more user-friendly game.
 
   # Unfixed Bugs
-  - I am aware there is pep 8 errors in the hangman _lives files, this is a result of ascii banner inserted and some manual edits, it is giving a trailing whitespace warning, I discussed this with my mentor and tutor support, there was no straight forward fix, it has no effect on the game performance, and I chose to leave it is as I thought it was good feature for user experience.
+  
+  - I am aware there is pep 8 errors in the hangman _lives files, this is a result of ascii banner inserted and some manual edits, it is giving a trailing whitespace warning, I discussed this with my mentor and tutor support,  it has no effect on the game performance, and I chose to leave it unfixed. As I thought it was good feature for user experience.
 
 # Deployment
 
 The site was created using Visual Studio Code in Gitpod and GitHub, and deployed to Heroku pages using the below process:
 
+Git Pod - Github
 1. Remove un-wanted import features in run.py file
 2. Add to requirements.txt file:-
 * pip3 freeze > requirements.txt
@@ -210,6 +216,7 @@ Next I Created an new account in Heroku, And the follows steps were done
 16. After project has been deployed successfully I clicked the View-button to see the program run in the terminal and checked it it worked ok.
 
  ## Version Control
+
   - Git was used as the version control software. Commands such as git add ., git status, git commit and git push were used to add, save, stage and push the code to the GitHub repository.
 
 ## Cloning
@@ -277,13 +284,14 @@ Next I Created an new account in Heroku, And the follows steps were done
 -  ## Tools
    - [Ascii Art](https://manytools.org/hacker-tools/ascii-banner/) - Used to create Ascii Banners
    - [Luid Charts](https://bit.ly/3hXPmbj) - used for flow
+   - [Am I Responsive ](http://ami.responsivedesign.is/) image at start of readme
    
 
 -  ## Acknowledgements
  - Special thanks to my mentor Miguel Martinez for his help and guidance in the development of my project. Special thanks to my tutor Kasia and our regular class meeting’s and members of the awesome slack community
 
    # Conclusion
-    - If I had time, I would like to add a high scores table using the tutorial of love sandwiches as a base.    
+    - If I had time, I would like to add a high scores feature  using the tutorial of love sandwiches as a base.    
     - I would also like to make more commits during the project built.
     - Overall, I enjoyed python and I have shortlisted a number of other projects i came across when in the research phase for the project that I would like to build after this course.
 
