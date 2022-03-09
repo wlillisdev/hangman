@@ -25,6 +25,13 @@ The goal of this Game is to create an interactive word game that is both fun a c
   - As a user, i want the game to be fun and easy to play.
   - As a user, i want the game to be challenging.
 
+# Flow Chart
+
+![Hangman](images_readme/hangman_flowchart.png)
+
+
+
+
 # Features 
 
  __Start Screen__
