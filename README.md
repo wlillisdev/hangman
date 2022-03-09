@@ -25,8 +25,18 @@ The goal of this Game is to create an interactive word game that is both fun a c
   - As a user, i want the game to be fun and easy to play.
   - As a user, i want the game to be challenging.
 
+# Data Model
+The game uses a data base of random words and of hangman visuals that are imported into the python game.
+The game consists of 2 main classes the player and the hangman game.
+ - The player class allows the user to input name, validate player input, let the player read hangman rules, let the player make a guess, validate guess, restart game, exit game.
+  - some of the methods used  menu(),exit_game(),hangman_rules(),restart_game()
+ - The main hangman game class, generates a random word from the database of words, compares players guesses to the hidden random word, records users lives & generates a hangman visual based on incorrect guesses from the imported hangman visual file. 
+  - Some of the methods used  get_word(), play_hangman(),def clear()
+- Both classes also uses print to help the user play game and give feedback
+
+
 # Flow Chart
-The flow chart was devloped to outline the logic of the game and help me programme it.I used [Luid Charts](https://bit.ly/3hXPmbj)
+The flow chart was devloped to outline the logical flow of the game and help me programme it.I used [Luid Charts](https://bit.ly/3hXPmbj)
 
 ![Hangman](images_readme/flowchart_hangman.png)
 
