@@ -183,21 +183,21 @@ The site was created using Visual Studio Code in Gitpod and GitHub, and deployed
 Next I Created an new account in Heroku, And the follows steps were done
 
 1.	First I must create a new app to do this, click NEW in the top right corner and from the drop-down menu select Create a new APP.
-3.	You must an app name, (hangman_wl)Heroku requires a unique name.
-4.	Select the region Europe.
-5.	Click on the Create App button.
-6.	The next page you will see is the project’s Deploy Tab.  Click on setting tab and scroll down to config vars
-7.	Scroll down to Config Vars where and enter the KEY: PORT and VALUE: 8000 I have no creds.json files to added for my build.
-8.  Press Add-button
-9.	Scroll down to Buildpacks and press the icon for Python, click Save Changes, then press the icon for Nodejs and save changes. Note These Buildpacks must be in the order of Python first and Nodejs second.
-10.	Scroll to the top of the page and now choose the Deploy tab
-11.	Select Github as the deployment method.
-12.	Confirm you want to connect to GitHub.
-13.	Search for the repository name and click the connect button.
-14.	Scroll to the bottom of the deploy page and select preferred deployment method.
-15. I clicked on Automatic Deployment so that my changes that I push to github are automatically updates in Heroku as i was still testing and building the game at this point
-16. Then in the Manual Deploy section, press Deploy Branch.
-17. After project has been deployed successfully I clicked the View-button to see the program run in the terminal and checked it it worked ok.
+2.	You must create an app name, (hangman_wl) Heroku requires a unique name.
+3.	Select the region Europe.
+4.	Click on the Create App button.
+5.	The next page you will see is the project’s Deploy Tab.  Click on setting tab and scroll down to config vars.
+6.	Scroll down to Config Vars where and need to enter the KEY: PORT and VALUE: 8000 I have no creds.json files for my project.
+7.  Press Add-button
+8.	Scroll down to Buildpacks and press the icon for Python, click Save Changes, then press the icon for Nodejs and save changes. Note These Buildpacks must be in the order of Python first and Nodejs second.
+9.	Scroll to the top of the page and now choose the Deploy tab
+10.	Select Github as the deployment method.
+11.	Confirm you want to connect to GitHub.
+12.	Search for the repository name and click the connect button.
+13.	Scroll to the bottom of the deploy page and select preferred deployment method.
+14. I clicked on Automatic Deployment so that my changes that I pushed to github are automatically updates in Heroku as i was still testing and building the game at this point.
+15. Then in the Manual Deploy section, press Deploy Branch.
+16. After project has been deployed successfully I clicked the View-button to see the program run in the terminal and checked it it worked ok.
 
  ## Version Control
   - Git was used as the version control software. Commands such as git add ., git status, git commit and git push were used to add, save, stage and push the code to the GitHub repository.
@@ -265,16 +265,15 @@ Next I Created an new account in Heroku, And the follows steps were done
 
 -  ## Tools
    - [Ascii Art](https://manytools.org/hacker-tools/ascii-banner/) - Used to create Ascii Banners
-   - [Luid Charts](https://bit.ly/3hXPmbj) - used for flow chart
+   - [Luid Charts](https://bit.ly/3hXPmbj) - used for flow
    
 
 -  ## Acknowledgements
- - Special thanks to my mentor Miguel Martinez
- for his help and guidance in the development of my project. Special thanks to my tutor Kasia and our regular class meeting’s and members of the awesome slack community
+ - Special thanks to my mentor Miguel Martinez for his help and guidance in the development of my project. Special thanks to my tutor Kasia and our regular class meeting’s and members of the awesome slack community
 
    # Conclusion
     - If I had time, I would like to add a high scores table using the tutorial of love sandwiches as a base.    
-    - I would also learn to make more commits during the project built.
+    - I would also like to make more commits during the project built.
     - Overall, I enjoyed python and I have shortlisted a number of other projects i came across when in the research phase for the project that I would like to build after this course.
 
 
