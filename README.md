@@ -114,18 +114,18 @@ __Error Handling Main Game__
 
 # Design
  - Ascii Art
-   - Ascii Banners were used both in the main game heading, And in the main game interface, it add a nice dimension to the the overall design as using python only can make a boring interface for the user
+   - Ascii Banners were used both in the main game heading, And in the main game interface, it adds a nice dimension to the the overall design as using python only can make a boring interface for the user
 
     ![Ascii Banner](images_readme/hangman_logo.png)
 
  - Color Palette
-   - I imported colorama to python to add color to the design of the game, it helps improve user eperience and overall game play. Red was used to highlight any errors,invlaid inputs & lose banner.Green was used for correct guesses and win banner.
+   - I imported colorama to python to add color to the design of the game, it helps improve user eperience and overall game play. Red was used to highlight any errors,invlaid inputs & lose banner.Green was used for correct guesses and win banner. This can be seen in the featuers section.
 
    - Yellow and Cyan colors were also used to improve the overall interface of the game design.
 
     ![Color Palette](images_readme/color_pallet.png)
 
-   - Hangman Visuals pictures also help animate the game and create an element of suspense
+   - Hangman Visuals pictures also help animate the game and create an element of suspense for the user and give a traditional element to the game.
 
     ![Hangman Visual](images_readme/hangman_visual.png)
 
@@ -135,10 +135,10 @@ __Error Handling Main Game__
   - There will be 3 difficulty levels, Easy, Medium & Hard, Hard will have 4 lives, Medium 7 lives and easy 10 lives. This will make the game more challenging
 
 - Leader Board
-  - The game will have a points system the user will earn point for correct guesses at the end of the game the users score will be uploaded in to a high scores screen.        
+  - The game will have a points system the user will earn points for correct guesses at the end of the game the users name and score will be uploaded in to a high scores screen.        
 
 - Word Themes 
-  - Currently all the Kyle Ying are just random Kyle Ying, it would be interesting if the user could select a theme and the Kyle Ying were directly related to that, for example movies
+  - Currently the word list is just random words. it would be interesting if the user could select a theme for example movies and all the words would be related to movies.
 
 # Testing
 
@@ -147,11 +147,11 @@ __Error Handling Main Game__
  - Pep 8 Testing
    - [pep8 online](http://pep8online.com/)  was used for validating the python files. 
    - Initally there was a number of errors , all errors were fixed
-     - [Erros From Validator Hompage](images_readme/pep8.png)
+     - [Inital Erros From Pep 8](images_readme/pep8.png)
 
   - Pep 8 Pass Test
 
-    - ![Erros From Validator Hompage](images_readme/pep8_pass_hangman.png)
+    - ![Pep 8 Pass](images_readme/pep8_pass_hangman.png)
    
 ## Manual Testing
   - Continuous testing was carried out in git pod terminal and on the Heroku terminal during the game development. Methods such as print() was used as the code was been developed I used this to check for errors during the build.
@@ -162,14 +162,14 @@ __Error Handling Main Game__
 
 # Bugs
 
-  - When deploying the game on Huroko at first it wouldn’t deploy because of an issue colorama. After some research i added colorama to the requirements.txt file and it deployed ok.
-  - I used the type writer effect form YouTube tutorial, it was defined originally as def typewriter(string) but as i already had imported string for the main game it was causing issues, so i redefined the function as def typewriter(line).
+  - When deploying the game on Huroko at first it wouldn’t deploy because of an issue with colorama. After some research i added colorama to the requirements.txt file and it deployed ok.
+  - I used the type writer effect form YouTube tutorial, it was defined originally as def typewriter(string) but as i already had imported python libary string for the main game it was causing issues, so i redefined the function as def typewriter(line).
   - When testing the game it was noted that it was possible for the user to not fill out the user name input, i inserted isalpha() to ensure that it only accepted characters from the alphabet.
   - When playing the game I noticed that every guess and hangman visual was appearing in the terminal and if you restarted the game the terminal became very busy and clutterd. I research that using a clear os.system function would get rid of the issue and make a cleaner and more user friendly interface by clearing each screen on the terminal after each guess. I used this function throughout the build once it was defined to make a cleaner and more user friendly game.
 
 
   # Unfixed Bugs
-  - I am aware there is pep 8 errors in the hangman _lives files, this is a result of ascii banner inserted, it is giving a trailing whitespace warning, I discussed this with my mentor and tutor support, there was no straight forward fix, it has no effect on the game performance, and I chose to leave it is as I thought it was good feature for user experience.
+  - I am aware there is pep 8 errors in the hangman _lives files, this is a result of ascii banner inserted and some manual edits, it is giving a trailing whitespace warning, I discussed this with my mentor and tutor support, there was no straight forward fix, it has no effect on the game performance, and I chose to leave it is as I thought it was good feature for user experience.
 
 # Deployment
 
