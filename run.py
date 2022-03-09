@@ -48,7 +48,7 @@ def start_screen():
             typewriter(f"""WELCOME, {username.upper()} \n""")
             typewriter(""" I HOPE YOU ARE READY...\n""")
             typewriter(f"""THE LAST, {username.upper()} THAT PLAYED..... \n""")
-            typewriter(""".. IS STILL HANGING AROUND ;)....\n\n""")
+            typewriter(""".. IS STILL HANGING AROUND ;)..\n\n""")
             break
 
 
@@ -175,7 +175,7 @@ def play_hangman():
 
         # Ask the users for a letter guess
         user_letter = input('Guess a letter:\n').upper()
-        # clear()
+        clear()
         # If valid letter in alphabet add to user letter set
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
@@ -184,23 +184,19 @@ def play_hangman():
                 word_letters.remove(user_letter)
                 print(Fore.YELLOW + '========================================')
                 print(Fore.GREEN + 'correct guess,well done'.upper())
-                clear()
             else:
                 # takes away a life if wrong
                 lives = lives - 1
                 print(Fore.YELLOW + '========================================')
                 print(Fore.RED + 'That Letter is not in the word.'.upper())
-                clear()
         # If user guessed character that has already been guessed give feedback
         elif user_letter in used_letters:
             print(Fore.YELLOW + '=========================================')
             print(Fore.RED + 'Letter already used,please try again.'.upper())
-            clear()
         # If user guessed a character that is not a letter give user feedback
         else:
             print(Fore.YELLOW + '=========================================')
             print(Fore.RED + 'Invalid character,Please usa a letter.'.upper())
-            clear()
 
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
