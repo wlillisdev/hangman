@@ -35,7 +35,7 @@ def start_screen():
     # Intro message in typewriter effect
     typewriter("""
     THERE CAN BE ONLY ONE WINNER.....\t\n
-    WILL IT BE YOU OR THE HANGMAN...\t\n
+    WILL IT BE YOU OR THE HANGMAN.....\t\n
     """)
     # Ask for user name
     while True:
@@ -48,7 +48,7 @@ def start_screen():
             typewriter(f"""WELCOME, {username.upper()} \n""")
             typewriter(""" I HOPE YOU ARE READY...\n""")
             typewriter(f"""THE LAST, {username.upper()} THAT PLAYED..... \n""")
-            typewriter("""..... IS STILL HANGING AROUND ;)\n\n""")
+            typewriter(""".. IS STILL HANGING AROUND..... ;)\n\n""")
             break
 
 
@@ -161,16 +161,16 @@ def play_hangman():
     lives = 7
     # creat a loop to iterate through input until all the letters guessed
     while len(word_letters) > 0 and lives > 0:
-        print(Fore.YELLOW + '==========================================')
+        print(Fore.YELLOW + '========================================')
         print('You have'.upper(), lives, 'lives left'.upper())
         # letters that have been used
         print('You have used these letters: '.upper(), ' '.join(used_letters))
-        print(Fore.YELLOW + '==========================================')
+        print(Fore.YELLOW + '========================================')
         # Tells the user what the current word with dashes (ie S - - P)
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
         print(lives_visual_dict[lives])
-        print(Fore.YELLOW + '==========================================')
+        print(Fore.YELLOW + '========================================')
         print(Fore.GREEN + 'Current word: '.upper(), ' '.join(word_list))
 
         # Ask the users for a letter guess

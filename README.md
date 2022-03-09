@@ -186,6 +186,8 @@ __Error Handling Main Game__
   
   - I am aware there is pep 8 errors in the hangman _lives files, this is a result of ascii banner inserted and some manual edits, it is giving a trailing whitespace warning, I discussed this with my mentor and tutor support,  it has no effect on the game performance, and I chose to leave it unfixed. As I thought it was good feature for user experience.
 
+  - [Lives Visual Pep 8](images_readme/pep8_lives.png)
+
 # Deployment
 
 The site was created using Visual Studio Code in Gitpod and GitHub, and deployed to Heroku pages using the below process:
