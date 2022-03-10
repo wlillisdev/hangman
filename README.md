@@ -29,8 +29,8 @@ The goal of this Game is to create an interactive word game that is both fun a c
 
 # Data Model
 
-The game uses a data base of  words and  hangman visuals images that are imported into the python game.
-The game consists of 2 main classes the player and the hangman game.
+The game uses a data base of words and  hangman visuals images that are imported into python.
+The main game consists of number of methods that are called on in sequence to play the game.
  - The player class allows the user to input name, validate player input, let the player read hangman rules, let the player make a guess, validate guess, restart game, exit game.
     - some of the methods used  menu(),exit_game(),hangman_rules(),restart_game()
  - The main hangman game class, generates a random word from the database of words, compares players guesses to the hidden random word, records users lives & generates a hangman visual based on incorrect guesses from the imported hangman visual file. 
@@ -190,7 +190,7 @@ __Error Handling Main Game__
 
 # Deployment
 
-The site was created using Visual Studio Code in Gitpod and GitHub, and deployed to Heroku pages using the below process:
+The site was created using Gitpod and GitHub, and deployed to Heroku pages using the below process:
 
 Git Pod - Github
 1. Remove un-wanted import features in run.py file
@@ -265,11 +265,11 @@ Next I Created an new account in Heroku, And the follows steps were done
 
 -  ## Python Libraries
     - random
-      - The random library was imported to generate a random word from the word.py file, each new game has a different random word.
+      - The random library was imported to select a random word from the word.py file, each new game has a different random word.
     - os
-      - The os library was imported to create a function to use the os.system to clear the terminal screen.
+      - The os library was imported to use the os.sytsem function to clear the terminal screen.
     - sys
-      - The sys library was imported to create a function that allows the user to exit the game.
+      - The sys library was imported to use its exit function that allows the user to exit the game.
     - time
       - The time() function returns the number of seconds passed since epoch and was used to make the type write effect function.
     - string
