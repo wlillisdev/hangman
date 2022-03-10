@@ -268,17 +268,17 @@ Next I Created an new account in Heroku, And the follows steps were done
    - The type writer effect was inspired by [Kwasii](https://www.youtube.com/watch?v=A_1THfBpCH8)
 
 -  ## Python Libraries
-    - random
+    - [random](https://docs.python.org/3/library/random.html)
       - The random library was imported to select a random word from the word.py file, each new game has a different random word.
-    - os
+    - [os](https://docs.python.org/3/library/os.html?highlight=os#module-os)
       - The os library was imported to use the os.sytsem function to clear the terminal screen.
-    - sys
+    - [sys](https://docs.python.org/3/library/sys.html?highlight=sys#module-sys)
       - The sys library was imported to use its exit function that allows the user to exit the game.
-    - time
+    - [time](https://docs.python.org/3/library/time.html?highlight=time#module-time)
       - The time() function returns the number of seconds passed since epoch and was used to make the type write effect function.
-    - string
+    - [string](https://docs.python.org/3/library/string.html?highlight=string#module-string)
       - The import string was used to define a constants set of ascii_letters in the alphabet which was used to define a set of characters that the user could only guess from in the main game function.
-    - colorama
+    - [colorama](https://pypi.org/project/colorama/)
       - colorama was used to apply different colors in the games interface and improve error handling.
 
  -  ## Resources
