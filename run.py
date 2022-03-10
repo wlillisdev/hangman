@@ -166,7 +166,7 @@ def play_hangman():
         # letters that have been used
         print('You have used these letters: '.upper(), ' '.join(used_letters))
         print(Fore.YELLOW + '========================================')
-        # Tells the user what the current word with dashes (ie S - - P)
+        # Tells the user what the current word is with dashes (ie S - - P)
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
         print(lives_visual_dict[lives])
