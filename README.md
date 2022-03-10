@@ -29,14 +29,18 @@ The goal of this Game is to create an interactive word game that is both fun a c
 
 # Data Model
 
-The game uses a data base of words and  hangman visuals images that are imported into python.
-The main game consists of number of methods that are called on in sequence to play the game.
- - The player class allows the user to input name, validate player input, let the player read hangman rules, let the player make a guess, validate guess, restart game, exit game.
-    - some of the methods used  menu(),exit_game(),hangman_rules(),restart_game()
- - The main hangman game class, generates a random word from the database of words, compares players guesses to the hidden random word, records users lives & generates a hangman visual based on incorrect guesses from the imported hangman visual file. 
-    - Some of the methods used  get_word(), play_hangman(),def clear()
-- Both classes also uses the print method to help the user play the game and give feedback
-
+The game uses a data base of words and hangman visuals images that are imported into python.
+The main game consists of number of methods that are called on in sequence to run the game.
+ - start_screen()
+    - This introduces the player to the game and asks the player to input thier name.
+ - menu()
+    - This is the main menu of the game.User can select to read game rules, play game or exit game
+ - get_word()
+    - This will select a random  word from the words_list that the player will have to guess in the game.
+ - play_hangman()
+    - Plays a game of hangman. Displays players lives and overall layout for user to play game. Selects a word from word list, Hides the word from player. 
+    Checks players guesses/input against the hidden word, gives feedback if the players guess is correct or not. Displays the players guessed characters. The game deducts a life for ever and also builds a hangman visual image if the players guess is incorrect. Player wins is displayed if the player guesses the word before all their lives are gone. Game Over printed if player loses all lives before word is guessed. The game can be restarted or exited once the game is over.
+- The print method is used to help the user play the game and give feedback
 
 # Flow Chart
 
