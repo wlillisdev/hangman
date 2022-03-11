@@ -220,7 +220,6 @@ def restart_game():
             game_restart = True
             clear()
             play_hangman()
-            
         # returns the user to main menu if they fdont want to play again
         elif restart == "N":
             game_restart = True
