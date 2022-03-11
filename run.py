@@ -218,8 +218,9 @@ def restart_game():
         # Restarts new game of hangman
         if restart == "Y":
             game_restart = True
-            play_hangman()
             clear()
+            play_hangman()
+            
         # returns the user to main menu if they fdont want to play again
         elif restart == "N":
             game_restart = True

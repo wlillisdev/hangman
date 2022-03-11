@@ -15,13 +15,13 @@ The goal of this Game is to create an interactive word game that is both fun a c
   - The user will have 7 tries or lives to guess the hidden word.
   - After each guess the user will get feedback weather they have guessed correctly or incorrectly. If they have guessed correctly a letter will be revealed in the hidden word A P _ _ E
   - If user guesses incorrectly, they will be notified of incorrect guess and they will lose a life. They will also get a visual representation of a hangman image been built for every life lost
-  - Game is over when either all the user’s lives have gone or if the user correctly guesses all the letters in the hidden word.
+  - The Game is over when either all the user’s lives have gone or if the user correctly guesses all the letters in the hidden word.
 
  ![Game displaying,SecrteLives,Guesses,Words Guessed,Hangman Visual](images_readme/how_to_play.png) 
 
 # User Stories
 
-  The target audience for this game is both adults and kids as both dimorphic enjoy word games, I tried to strike a balance between fun, engaging and also challenging for the user.
+  The target audience for this game is both adults and kids as both demographics enjoy word games, I tried to strike a balance between fun, engaging and also challenging for the user.
   - As a  user, I want to quickly and easily navigate the game.
   - As a user, I want to know the rules of the game.
   - As a user, i want the game to be fun and easy to play.
@@ -39,7 +39,10 @@ The main game consists of number of methods that are called on in sequence to ru
     - This will select a random  word from the words_list that the player will have to guess in the game.
  - play_hangman()
     - Plays a game of hangman. Displays players lives and overall layout for user to play game. Selects a word from word list, Hides the word from player. 
-    Checks players guesses/input against the hidden word, gives feedback if the players guess is correct or not. Displays the players guessed characters. The game deducts a life for ever and also builds a hangman visual image if the players guess is incorrect. Player wins is displayed if the player guesses the word before all their lives are gone. Game Over printed if player loses all lives before word is guessed. The game can be restarted or exited once the game is over.
+    Checks players guesses/input against the hidden word, gives feedback if the players guess is correct or not. Displays the players guessed characters. The game deducts a life and also builds a hangman visual image if the players guess is incorrect. 
+      - The user_win() function displays a you win banner if the player guesses the word before all their lives are gone. 
+      - The user_lose() function displays Game Over banner if the player loses all lives before word is guessed. 
+      - The game_restart() function allows the player to resart a new game or exit once the game is over.
 - The print method is used to help the user play the game and give feedback
 
 # Flow Chart
