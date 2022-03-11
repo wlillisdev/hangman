@@ -40,8 +40,8 @@ The main game consists of number of methods that are called on in sequence to ru
  - play_hangman()
     - Plays a game of hangman. Displays players lives and overall layout for user to play game. Selects a word from word list, Hides the word from player. 
     Checks players guesses/input against the hidden word, gives feedback if the players guess is correct or not. Displays the players guessed characters. The game deducts a life and also builds a hangman visual image if the players guess is incorrect. 
-      - The user_win() function displays a you win banner if the player guesses the word before all their lives are gone. 
-      - The user_lose() function displays Game Over banner if the player loses all lives before word is guessed. 
+      - The user_win() function displays a you win banner if the player guesses the hidden word before all their lives are gone. 
+      - The user_lose() function displays Game Over banner if the player loses all thier lives before the hidden word is guessed. 
       - The game_restart() function allows the player to resart a new game or exit once the game is over.
 - The print method is used to help the user play the game and give feedback
 
@@ -72,7 +72,7 @@ __Game Menu__
 
       ![Main Menu](images_readme/menu_hangman.png)
 
-  - The Hangman Rules section outlines the rules of the game, this text is delivered in a type writer effect to amke it more engaging to the user.
+  - The Hangman Rules section outlines the rules of the game, this text is delivered in a type writer effect to make it more engaging to the user.
 
      ![Hangman Rules](images_readme/hangman_rules.png)
 
@@ -90,7 +90,7 @@ __Game Menu__
 
 __Main Game__
 
-  - At the game start screen, the user is greeted with a bright game interface. It displays the current users lives, What letters he has guessed, (current nothing displayed as game has yet to started) What the Hidden word is _ _ _ _  that is randomly selected form a directory of over 400 words.
+  - At the game start screen, the user is greeted with a bright game interface. It displays the current users lives, What letters the user has guessed, (currently nothing displayed as game has yet to started) What the Hidden word is _ _ _ _  that is randomly selected form a directory of over 400 words.
   The screen also asks the user to guess a letter. I also included ascii art in to the lives dictionary to display at the opening screen of the game saying Good Luck.
 
     ![Main Game Interface](images_readme/start_game.png)
@@ -134,7 +134,7 @@ __Error Handling Main Game__
 # Design
 
  - Ascii Art
-   - Ascii Banners were used both in the main game heading, And in the main game interface, it adds a nice dimension to the the overall design as using python only can make a boring interface for the user
+   - Ascii Banners were used both in the main game heading, And in the main game interface, it adds a nice dimension to the the overall design as using command line python only can make a boring interface for the user
 
     ![Ascii Banner](images_readme/hangman_logo.png)
 
